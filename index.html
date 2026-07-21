@@ -1,0 +1,977 @@
+<!DOCTYPE html>
+<html lang="pt-BR" class="age-locked">
+<head>
+  
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=5.0, viewport-fit=cover">
+<meta name="theme-color" content="#000000">
+<title>SEU INFOPRODUTO AQUI</title>
+
+<!-- ============ META PIXEL - EDITAR PIXEL_ID ============ -->
+<script>
+!function(f,b,e,v,n,t,s)
+{if(f.fbq)return;n=f.fbq=function(){n.callMethod?
+n.callMethod.apply(n,arguments):n.queue.push(arguments)};
+if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
+n.queue=[];t=b.createElement(e);t.async=!0;
+t.src=v;s=b.getElementsByTagName(e)[0];
+s.parentNode.insertBefore(t,s)}(window, document,'script',
+'https://connect.facebook.net/en_US/fbevents.js');
+fbq('init', 'EDITAR_PIXEL_ID');     /* EDITAR */
+fbq('track', 'PageView');
+</script>
+<noscript><img height="1" width="1" style="display:none"
+src="https://www.facebook.com/tr?id=EDITAR_PIXEL_ID&ev=PageView&noscript=1"/></noscript>
+<!-- ====================== fim do Pixel ====================== -->
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@800;900&family=DM+Sans:wght@400;600&display=swap" rel="stylesheet">
+
+<style>
+:root{--bg:#000000;--bg2:#0a0a0a;--bg3:#111;--red:#ff1744;--red2:#ff5252;--redd:#b3001b;--gold:#ffd600;--gold2:#ffe566;--text:#f0f0f0;--muted:#666;--card:#0a0a0a;--r:16px;--safe-bottom:env(safe-area-inset-bottom,0px);}
+*{margin:0;padding:0;box-sizing:border-box;-webkit-tap-highlight-color:transparent}
+html{scroll-behavior:smooth;text-size-adjust:100%;-webkit-text-size-adjust:100%}
+body{background:var(--bg);color:var(--text);font-family:'DM Sans',sans-serif;overflow-x:hidden;-webkit-font-smoothing:antialiased;width:100%;max-width:100vw;}
+img{display:block;max-width:100%;height:auto;border:0}
+a{color:inherit;text-decoration:none}
+button{font-family:inherit;cursor:pointer;border:none;background:none;color:inherit}
+.grain{position:fixed;inset:0;background-image:url("data:image/svg+xml,%3Csvg viewBox='0 0 256 256' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.9' numOctaves='4' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)' opacity='0.04'/%3E%3C/svg%3E");pointer-events:none;z-index:999;opacity:.25;}
+.top-bar{background:linear-gradient(90deg,var(--redd),var(--red),var(--redd));padding:10px 16px;text-align:center;font-size:.75rem;font-weight:700;letter-spacing:1px;color:#1a0004;position:relative;z-index:10;padding-top:calc(10px + env(safe-area-inset-top,0px));}
+.hero{position:relative;min-height:100svh;display:flex;flex-direction:column;align-items:center;justify-content:flex-start;padding:clamp(28px,5vw,48px) clamp(16px,5vw,24px) 20px;text-align:center;overflow:hidden;}
+.hero-bg{position:absolute;inset:0;background:radial-gradient(ellipse 80% 50% at 50% 0%,rgba(255,23,68,.09) 0%,transparent 65%),radial-gradient(ellipse 50% 30% at 80% 90%,rgba(255,214,0,.06) 0%,transparent 60%),var(--bg);z-index:0;}
+.hero-glow{position:absolute;width:min(300px,80vw);height:min(300px,80vw);border-radius:50%;background:radial-gradient(circle,rgba(255,23,68,.14) 0%,transparent 70%);top:-80px;left:50%;transform:translateX(-50%);animation:glow-pulse 4s ease-in-out infinite;z-index:0;}
+@keyframes glow-pulse{0%,100%{opacity:.5;transform:translateX(-50%) scale(1)}50%{opacity:1;transform:translateX(-50%) scale(1.15)}}
+.headline{position:relative;z-index:1;font-family:'Montserrat',sans-serif;font-size:clamp(1.45rem,5.5vw,2.4rem);font-weight:900;line-height:1.2;letter-spacing:-.3px;margin-bottom:10px;max-width:min(420px,100%);}
+.headline .hl-gold{color:var(--gold)}
+.mockup-scene{position:relative;z-index:1;width:100%;height:clamp(320px,70vw,400px);margin:-10px auto clamp(28px,5vw,40px);display:flex;align-items:flex-end;justify-content:center;padding-bottom:16px;contain:layout;}
+.mockup-badge{position:absolute;top:10px;right:14px;background:var(--red);color:#000;font-size:9px;font-weight:800;letter-spacing:1.5px;text-transform:uppercase;padding:5px 11px;border-radius:100px;box-shadow:0 4px 20px rgba(255,23,68,.45);z-index:20;}
+.fan-wrap{position:relative;width:clamp(160px,45vw,200px);height:clamp(240px,65vw,300px)}
+.fan-card{position:absolute;bottom:0;left:0;width:clamp(148px,42vw,186px);height:clamp(220px,60vw,268px);border-radius:var(--r);overflow:hidden;border:2px solid rgba(255,23,68,.5);box-shadow:0 16px 50px rgba(0,0,0,.75);transform-origin:bottom center;opacity:1;transform:rotate(var(--rot-end,0deg));background:linear-gradient(160deg,#2a1a1a,#120a0a);backface-visibility:hidden;animation:fan-rise .75s cubic-bezier(.16,1,.3,1) both;}
+.fan-card img{width:100%;height:100%;object-fit:cover;filter:brightness(.9) contrast(1.08) saturate(1.1);transition:opacity .45s ease;}
+.fan-card::after{content:'';position:absolute;inset:0;background:linear-gradient(180deg,transparent 50%,rgba(0,0,0,.55) 100%);pointer-events:none}
+@keyframes fan-rise{0%{opacity:0;transform:translateY(140%) rotate(var(--rot-start))}55%{opacity:1}100%{opacity:1;transform:translateY(0) rotate(var(--rot-end))}}
+.fan-card:nth-child(1){--rot-start:-44deg;--rot-end:-34deg;z-index:1;animation-delay:.05s}
+.fan-card:nth-child(2){--rot-start:-24deg;--rot-end:-17deg;z-index:2;animation-delay:.16s}
+.fan-card:nth-child(3){--rot-start:-4deg;--rot-end:0deg;z-index:5;animation-delay:.27s}
+.fan-card:nth-child(4){--rot-start:16deg;--rot-end:17deg;z-index:2;animation-delay:.38s}
+.fan-card:nth-child(5){--rot-start:36deg;--rot-end:34deg;z-index:1;animation-delay:.49s}
+.fan-card:nth-child(3){width:clamp(158px,45vw,200px);height:clamp(230px,63vw,284px);left:-7px;border-color:rgba(255,23,68,.75);box-shadow:0 20px 60px rgba(255,23,68,.3);background:linear-gradient(160deg,#301f1f,#1a0d0d);animation:fan-rise .75s cubic-bezier(.16,1,.3,1) .27s both,fan-float 3.8s ease-in-out 1.2s infinite;}
+@keyframes fan-float{0%,100%{transform:translateY(0)}50%{transform:translateY(-8px)}}
+.fan-glow{position:absolute;bottom:10px;left:50%;transform:translateX(-50%);width:240px;height:36px;background:radial-gradient(ellipse,rgba(255,23,68,.45) 0%,transparent 70%);filter:blur(12px);animation:fan-glow-p 3.5s ease-in-out infinite;pointer-events:none;}
+@keyframes fan-glow-p{0%,100%{opacity:.5;width:200px}50%{opacity:1;width:260px}}
+.cta-btn{position:relative;z-index:1;display:flex;align-items:center;justify-content:center;gap:10px;background:linear-gradient(135deg,var(--red),var(--redd));color:#fff;font-family:'Montserrat',sans-serif;font-size:clamp(.95rem,3.5vw,1.05rem);font-weight:900;letter-spacing:1.5px;text-transform:uppercase;padding:18px clamp(20px,5vw,36px);border-radius:14px;min-height:52px;box-shadow:0 8px 32px rgba(255,23,68,.4);animation:cta-pulse 2.4s ease-in-out infinite;transition:transform .15s;width:100%;max-width:min(360px,100%);}
+.cta-btn:active{transform:scale(.97)}
+@keyframes cta-pulse{0%,100%{box-shadow:0 8px 32px rgba(255,23,68,.4),0 0 0 0 rgba(255,23,68,.2)}50%{box-shadow:0 8px 42px rgba(255,23,68,.6),0 0 0 14px rgba(255,23,68,0)}}
+.cta-sub{font-size:11px;color:var(--muted);margin-top:10px;letter-spacing:.5px;position:relative;z-index:1}
+.ticker-x-wrap{position:relative;width:100vw;left:50%;transform:translateX(-50%);height:100px;margin-top:28px;z-index:1;pointer-events:none;overflow:hidden;}
+.ticker-band{position:absolute;left:-60%;width:220%;padding:8px 0;display:flex;overflow:hidden;white-space:nowrap;}
+.ticker-band-1{top:20px;transform:rotate(-8deg);border-top:1px solid rgba(255,23,68,.5);border-bottom:1px solid rgba(255,23,68,.5);background:rgba(255,23,68,.04);z-index:2}
+.ticker-band-2{top:52px;transform:rotate(8deg);border-top:1px solid rgba(255,23,68,.25);border-bottom:1px solid rgba(255,23,68,.25);z-index:1}
+.ticker-band .ticker-track{display:flex;width:max-content;flex-shrink:0}
+.ticker-band-1 .ticker-track{animation:tick-scroll 18s linear infinite}
+.ticker-band-2 .ticker-track{animation:tick-scroll-r 22s linear infinite}
+@keyframes tick-scroll{0%{transform:translateX(0)}100%{transform:translateX(-50%)}}
+@keyframes tick-scroll-r{0%{transform:translateX(-50%)}100%{transform:translateX(0)}}
+.ticker-item{display:inline-flex;align-items:center;gap:8px;padding:0 20px;white-space:nowrap;flex-shrink:0}
+.t-name{font-family:'Montserrat',sans-serif;font-size:clamp(.85rem,3vw,1rem);font-weight:800;color:#ffc8ce;letter-spacing:3px;text-transform:uppercase}
+.t-sep{color:rgba(255,23,68,.5);font-size:10px;padding-left:6px}
+section{padding:clamp(44px,8vw,64px) clamp(16px,5vw,20px);position:relative}
+.section-label{font-size:10px;letter-spacing:4px;text-transform:uppercase;color:var(--red);margin-bottom:10px}
+.section-title{font-family:'Montserrat',sans-serif;font-size:clamp(1.4rem,5.5vw,2.1rem);font-weight:900;line-height:1.2;margin-bottom:8px}
+.section-sub{font-size:clamp(.82rem,2.8vw,.88rem);color:var(--muted);margin-bottom:32px;line-height:1.65}
+.social-proof{background:var(--bg2);padding:18px clamp(12px,4vw,20px);border-top:1px solid rgba(255,255,255,.04);border-bottom:1px solid rgba(255,255,255,.04)}
+.sp-inner{max-width:480px;margin:0 auto;display:flex;align-items:center;justify-content:center;gap:clamp(14px,4vw,24px);flex-wrap:wrap}
+.sp-item{display:flex;flex-direction:column;align-items:center;gap:2px}
+.sp-num{font-family:'Montserrat',sans-serif;font-size:clamp(1.15rem,4vw,1.3rem);font-weight:800;color:var(--text)}
+.sp-label{font-size:.62rem;letter-spacing:2px;text-transform:uppercase;color:var(--muted)}
+.sp-divider{width:1px;height:34px;background:rgba(255,255,255,.07)}
+.exemplos-section{background:var(--bg2);padding:clamp(40px,7vw,56px) 0 clamp(44px,7vw,60px);overflow:hidden;position:relative;}
+.exemplos-section::before,.exemplos-section::after{content:'';position:absolute;top:0;bottom:0;width:clamp(30px,8vw,60px);z-index:10;pointer-events:none;}
+.exemplos-section::before{left:0;background:linear-gradient(90deg,var(--bg2),transparent)}
+.exemplos-section::after{right:0;background:linear-gradient(-90deg,var(--bg2),transparent)}
+.exemplos-header{text-align:center;padding:0 clamp(14px,4vw,20px);margin-bottom:clamp(20px,4vw,28px)}
+.exemplos-header .section-title span{color:var(--gold)}
+.exemplos-header p{font-size:clamp(.75rem,2.5vw,.85rem);color:var(--muted);margin-top:6px}
+.carousel-outer{position:relative;width:100%;overflow:hidden;cursor:pointer;user-select:none;touch-action:pan-y}
+.carousel-track{display:flex;gap:clamp(8px,2vw,12px);width:max-content;animation:car-scroll 28s linear infinite;}
+@keyframes car-scroll{0%{transform:translateX(0)}100%{transform:translateX(-50%)}}
+.car-item{flex-shrink:0;width:clamp(110px,30vw,140px);aspect-ratio:2/3;border-radius:12px;overflow:hidden;border:1px solid rgba(255,23,68,.2);box-shadow:0 8px 30px rgba(0,0,0,.6);background:#161616;position:relative;}
+.car-item img{width:100%;height:100%;object-fit:cover;display:block}
+.car-item::after{content:'';position:absolute;inset:0;background:linear-gradient(180deg,transparent 60%,rgba(0,0,0,.4) 100%);pointer-events:none}
+.pause-hint{text-align:center;margin-top:clamp(10px,2vw,16px);font-size:.72rem;color:var(--muted);letter-spacing:1px;transition:color .3s}
+.pause-hint.is-paused{color:var(--red)}
+.benefits-section{background:var(--bg)}
+.benefits-section .inner{max-width:480px;margin:0 auto}
+.benefit-item{display:flex;gap:clamp(12px,3vw,16px);align-items:flex-start;padding:clamp(14px,3vw,20px) 0;border-bottom:1px solid rgba(255,255,255,.05)}
+.benefit-item:last-child{border-bottom:none}
+.benefit-icon{width:clamp(38px,9vw,44px);height:clamp(38px,9vw,44px);border-radius:12px;background:rgba(255,23,68,.1);border:1px solid rgba(255,23,68,.2);display:flex;align-items:center;justify-content:center;font-size:clamp(16px,4.5vw,20px);flex-shrink:0;}
+.benefit-text h4{font-size:clamp(.86rem,3vw,.92rem);font-weight:700;margin-bottom:3px}
+.benefit-text p{font-size:clamp(.76rem,2.5vw,.8rem);color:var(--muted);line-height:1.55}
+.acervo-section{background:var(--bg3);padding:clamp(44px,7vw,60px) clamp(14px,4vw,20px) clamp(48px,7vw,64px);position:relative}
+.acervo-section::before{content:'';position:absolute;top:0;left:0;right:0;height:1px;background:linear-gradient(90deg,transparent,rgba(255,23,68,.3),transparent)}
+.acervo-inner{max-width:480px;margin:0 auto}
+.acervo-title{font-family:'Montserrat',sans-serif;font-size:clamp(1.45rem,5.5vw,2.2rem);font-weight:900;line-height:1.2;text-align:center;margin-bottom:clamp(22px,4vw,32px)}
+.acervo-title span{color:var(--red)}
+.acervo-grid{display:grid;grid-template-columns:1fr 1fr;gap:clamp(8px,2.5vw,12px)}
+.acervo-card{background:#141414;border:1px solid rgba(255,255,255,.07);border-radius:var(--r);padding:clamp(12px,3vw,16px) clamp(10px,3vw,14px) clamp(14px,3.5vw,18px);position:relative;overflow:hidden;transition:border-color .3s;}
+.acervo-card::after{content:'';position:absolute;top:0;left:0;right:0;height:2px;background:rgba(255,23,68,.5);border-radius:var(--r) var(--r) 0 0}
+.acervo-card.ac-gold::after{background:rgba(255,214,0,.6)}
+.ac-header{display:flex;align-items:center;gap:clamp(6px,2vw,8px);margin-bottom:clamp(8px,2vw,12px)}
+.ac-icon{font-size:clamp(1.1rem,4vw,1.3rem);width:clamp(28px,7vw,32px);height:clamp(28px,7vw,32px);display:flex;align-items:center;justify-content:center;background:rgba(255,255,255,.05);border-radius:8px;flex-shrink:0}
+.ac-name{font-family:'Montserrat',sans-serif;font-size:clamp(.68rem,2.2vw,.78rem);font-weight:800;color:var(--text);line-height:1.2;text-transform:uppercase;letter-spacing:.5px}
+.acervo-card.ac-gold .ac-name{color:var(--gold)}
+.ac-list{list-style:none;display:flex;flex-direction:column;gap:clamp(4px,1.5vw,6px)}
+.ac-list li{font-size:clamp(.66rem,2vw,.72rem);color:#888;line-height:1.4;padding-left:10px;position:relative}
+.ac-list li::before{content:'.';position:absolute;left:2px;color:var(--red);font-weight:700}
+.offer-section{background:var(--bg3);text-align:center}
+.offer-section .inner{max-width:460px;margin:0 auto}
+.offer-card{background:var(--card);border:1px solid rgba(255,23,68,.25);border-radius:22px;padding:clamp(22px,5vw,28px) clamp(16px,4vw,22px) clamp(20px,5vw,24px);position:relative;overflow:hidden;box-shadow:0 0 60px rgba(255,23,68,.08);}
+.offer-card::before{content:'';position:absolute;top:0;left:0;right:0;height:3px;background:linear-gradient(90deg,var(--red),var(--gold),var(--red))}
+.offer-ribbon{position:absolute;top:16px;right:-26px;background:var(--red);color:#fff;font-size:9px;font-weight:800;letter-spacing:1.5px;text-transform:uppercase;padding:5px 34px;transform:rotate(45deg)}
+.offer-title{font-family:'Montserrat',sans-serif;font-size:clamp(1.1rem,4vw,1.3rem);font-weight:800;margin-bottom:5px}
+.offer-sub{font-size:clamp(.75rem,2.5vw,.8rem);color:var(--muted);margin-bottom:24px}
+.price-old{font-size:clamp(.78rem,2.5vw,.83rem);color:var(--muted);text-decoration:line-through;margin-bottom:3px}
+.price-new{font-family:'Montserrat',sans-serif;font-size:clamp(2.4rem,9vw,2.8rem);font-weight:900;color:var(--text);line-height:1;margin-bottom:3px}
+.price-new span{font-size:clamp(1.1rem,3.5vw,1.3rem);color:var(--muted);font-weight:400}
+.price-tag{font-size:clamp(.7rem,2.2vw,.76rem);color:#ff8a94;margin-bottom:24px;display:flex;align-items:center;justify-content:center;gap:5px}
+.scarcity-bar{width:100%;height:4px;background:rgba(255,255,255,.06);border-radius:99px;overflow:hidden;margin-bottom:6px}
+.scarcity-fill{height:100%;width:0;background:linear-gradient(90deg,var(--red),var(--red2));border-radius:99px;animation:scar-fill 2.5s ease forwards}
+@keyframes scar-fill{to{width:31%}}
+.scarcity-txt{font-size:.7rem;color:var(--muted);margin-bottom:20px;letter-spacing:.3px}
+.what-you-get{text-align:left;margin-bottom:24px}
+.what-item{display:flex;align-items:center;gap:9px;padding:clamp(6px,2vw,8px) 0;border-bottom:1px solid rgba(255,255,255,.04);font-size:clamp(.78rem,2.5vw,.83rem)}
+.what-item:last-child{border-bottom:none}
+.what-item .check{color:var(--red);font-size:13px;flex-shrink:0}
+.buy-btn{display:flex;align-items:center;justify-content:center;gap:10px;width:100%;background:linear-gradient(135deg,var(--red),var(--redd));color:#fff;font-family:'Montserrat',sans-serif;font-size:clamp(.9rem,3.2vw,1rem);font-weight:900;letter-spacing:1.5px;text-transform:uppercase;padding:clamp(16px,4vw,19px);border-radius:12px;min-height:54px;box-shadow:0 8px 30px rgba(255,23,68,.35);animation:cta-pulse 2.4s ease-in-out infinite;transition:transform .15s;}
+.buy-btn:active{transform:scale(.97)}
+.secure-badges{display:flex;align-items:center;justify-content:center;gap:clamp(10px,3vw,14px);margin-top:16px;flex-wrap:wrap}
+.sec-badge{display:flex;align-items:center;gap:5px;font-size:clamp(.65rem,2vw,.7rem);color:var(--muted)}
+.pattern-bg::after{content:'';position:absolute;inset:0;background-image:repeating-linear-gradient(45deg,rgba(255,23,68,.015) 0,rgba(255,23,68,.015) 1px,transparent 0,transparent 50%);background-size:20px 20px;pointer-events:none}
+.depo-section{background:var(--bg2);padding:clamp(40px,7vw,56px) clamp(16px,5vw,20px)}
+.depo-inner{max-width:480px;margin:0 auto}
+.depo-title{font-family:'Montserrat',sans-serif;font-size:clamp(1.3rem,5vw,1.8rem);font-weight:900;color:var(--red);text-align:center;margin-bottom:clamp(18px,4vw,24px);letter-spacing:.5px}
+.depo-box{background:#fff;border-radius:12px;padding:clamp(14px,4vw,20px);box-shadow:0 4px 24px rgba(0,0,0,.25)}
+.depo-count{font-size:.75rem;color:#65676b;margin-bottom:16px}
+.depo-comment{display:flex;gap:10px;margin-bottom:18px}
+.depo-comment:last-of-type{margin-bottom:0}
+.depo-avatar{width:38px;height:38px;border-radius:50%;flex-shrink:0;background:#ccc center/cover no-repeat}
+.depo-body{flex:1;background:#f0f2f5;border-radius:10px;padding:10px 12px}
+.depo-name{font-size:.8rem;font-weight:700;color:#1877f2;margin-bottom:3px}
+.depo-text{font-size:.82rem;color:#050505;line-height:1.5;margin-bottom:6px}
+.depo-actions{font-size:.72rem;color:#65676b}
+.faq-section{background:var(--bg2)}
+.faq-section .inner{max-width:480px;margin:0 auto}
+.faq-item{border-bottom:1px solid rgba(255,255,255,.06)}
+.faq-q{width:100%;background:none;color:var(--text);font-family:'DM Sans',sans-serif;font-size:clamp(.84rem,3vw,.9rem);font-weight:600;text-align:left;padding:clamp(16px,3.5vw,18px) 0;display:flex;justify-content:space-between;align-items:center;gap:12px;cursor:pointer;line-height:1.4;min-height:48px;}
+.faq-q .faq-arrow{font-size:17px;flex-shrink:0;color:var(--red);transition:transform .3s cubic-bezier(.16,1,.3,1)}
+.faq-item.open .faq-arrow{transform:rotate(180deg)}
+.faq-a{max-height:0;overflow:hidden;transition:max-height .4s cubic-bezier(.16,1,.3,1)}
+.faq-item.open .faq-a{max-height:260px}
+.faq-a p{font-size:clamp(.78rem,2.5vw,.82rem);color:var(--muted);line-height:1.7;padding-bottom:18px}
+.faq-a p strong{color:var(--text)}
+footer{background:var(--bg);padding:clamp(20px,4vw,28px) clamp(16px,4vw,20px) calc(clamp(20px,4vw,28px) + var(--safe-bottom));text-align:center;border-top:1px solid rgba(255,255,255,.04);}
+footer p{font-size:.7rem;color:var(--muted);line-height:1.8;max-width:380px;margin:0 auto}
+.footer-logo{font-family:'Montserrat',sans-serif;font-size:1rem;color:var(--red);margin-bottom:10px;font-weight:800;letter-spacing:2px;text-transform:uppercase}
+/* ====== PORTA DE IDADE (age gate) ====== */
+html.age-locked,html.age-locked body{overflow:hidden}
+#ageGate{position:fixed;inset:0;z-index:99999;display:flex;align-items:center;justify-content:center;padding:24px;background:#000000;overflow-y:auto;}
+#ageGate .ag-bg{position:absolute;inset:0;background:radial-gradient(ellipse 80% 50% at 50% 0%,rgba(255,23,68,.10) 0%,transparent 65%),radial-gradient(ellipse 60% 40% at 50% 100%,rgba(255,45,85,.07) 0%,transparent 60%),#000000;z-index:0;}
+#ageGate .ag-ono{position:absolute;font-family:'Montserrat',sans-serif;font-weight:900;text-transform:uppercase;pointer-events:none;user-select:none;}
+#ageGate .ag-ono-1{font-size:clamp(2rem,9vw,3.4rem);color:rgba(255,214,0,.12);top:8%;left:-2%;transform:rotate(-18deg)}
+#ageGate .ag-ono-2{font-size:clamp(1.6rem,7vw,2.6rem);color:rgba(255,23,68,.11);top:11%;right:-2%;transform:rotate(14deg)}
+#ageGate .ag-ono-3{font-size:clamp(1.5rem,6vw,2.4rem);color:rgba(255,45,85,.10);bottom:9%;left:3%;transform:rotate(-10deg)}
+#ageGate .ag-ono-4{font-size:clamp(2rem,9vw,3.2rem);color:rgba(255,23,68,.10);bottom:6%;right:-2%;transform:rotate(16deg)}
+.ag-card{position:relative;z-index:1;width:100%;max-width:380px;text-align:center;}
+.ag-warn{display:inline-flex;align-items:center;gap:7px;border:1px solid rgba(255,45,85,.5);background:rgba(255,45,85,.08);color:#ff6b85;font-size:.7rem;font-weight:700;letter-spacing:1px;text-transform:uppercase;padding:9px 16px;border-radius:100px;margin-bottom:24px;line-height:1.3;}
+.ag-title{font-family:'Montserrat',sans-serif;font-size:clamp(1.6rem,7vw,2.2rem);font-weight:900;line-height:1.2;margin-bottom:14px;}
+.ag-title span{display:block;color:var(--red)}
+.ag-sub{font-size:clamp(.82rem,3vw,.9rem);color:var(--muted);line-height:1.6;margin-bottom:30px;max-width:300px;margin-left:auto;margin-right:auto;}
+.ag-yes{display:flex;align-items:center;justify-content:center;gap:10px;width:100%;background:linear-gradient(135deg,var(--red),var(--redd));color:#fff;font-family:'Montserrat',sans-serif;font-size:clamp(.9rem,3.4vw,1rem);font-weight:900;letter-spacing:1px;text-transform:uppercase;padding:18px;border-radius:14px;min-height:56px;box-shadow:0 8px 32px rgba(255,23,68,.45);animation:cta-pulse 2.4s ease-in-out infinite;transition:transform .15s;line-height:1.25;}
+.ag-yes:active{transform:scale(.97)}
+.ag-check{display:inline-flex;align-items:center;justify-content:center;width:22px;height:22px;border-radius:6px;background:rgba(0,0,0,.22);font-size:14px;flex-shrink:0}
+.ag-no{display:inline-block;margin-top:18px;font-size:.82rem;color:var(--muted);text-decoration:underline;text-underline-offset:3px;padding:8px;}
+
+/* === CHECKOUT === */
+.hidden{display:none !important}
+#page-checkout{display:none;min-height:100vh;}
+.co-hero{position:relative;overflow:hidden;}
+.co-banner{width:100%;aspect-ratio:16/10;max-height:300px;object-fit:cover;object-position:center top;display:block;background:var(--bg2);}
+.co-hero-overlay{position:absolute;inset:0;background:linear-gradient(180deg,transparent 30%,rgba(0,0,0,.96) 100%);pointer-events:none;}
+.co-hero-content{position:absolute;bottom:0;left:0;right:0;padding:14px 20px 18px;text-align:center;}
+.co-badge{display:inline-flex;align-items:center;gap:6px;background:rgba(255,23,68,.12);border:1px solid rgba(255,23,68,.35);border-radius:100px;padding:5px 14px;font-size:11px;font-weight:800;color:var(--red);letter-spacing:1px;text-transform:uppercase;margin-bottom:8px;}
+.co-hero-title{font-family:'Montserrat',sans-serif;font-size:clamp(1.1rem,4.5vw,1.5rem);font-weight:900;line-height:1.2;text-shadow:0 2px 12px rgba(0,0,0,.8);}
+.co-hero-title span{color:var(--red);}
+.co-main{max-width:480px;margin:0 auto;padding:20px 16px 60px;}
+.co-product{background:var(--card);border:1px solid rgba(255,23,68,.2);border-radius:16px;padding:16px;display:flex;gap:14px;align-items:center;margin-bottom:18px;position:relative;overflow:hidden;}
+.co-product::before{content:'';position:absolute;top:0;left:0;right:0;height:2px;background:linear-gradient(90deg,var(--red),rgba(255,23,68,.3),var(--red));}
+.co-cover{width:72px;height:100px;border-radius:8px;object-fit:cover;flex-shrink:0;border:2px solid rgba(255,23,68,.3);box-shadow:0 8px 24px rgba(0,0,0,.5);background:var(--bg2);}
+.co-prod-name{font-family:'Montserrat',sans-serif;font-size:14px;font-weight:900;color:var(--red);text-transform:uppercase;letter-spacing:.5px;margin-bottom:4px;}
+.co-prod-desc{font-size:11px;color:var(--muted);line-height:1.5;margin-bottom:8px;}
+.co-prod-price{font-family:'Montserrat',sans-serif;font-size:22px;font-weight:900;color:var(--text);line-height:1;display:flex;align-items:baseline;gap:8px;flex-wrap:wrap;}
+.desc-tag{font-size:10px;font-weight:700;color:var(--red);background:rgba(255,23,68,.1);border:1px solid rgba(255,23,68,.3);padding:2px 8px;border-radius:100px;text-transform:uppercase;letter-spacing:.5px;}
+.co-form-title{font-family:'Montserrat',sans-serif;font-size:13px;font-weight:800;color:var(--text);text-transform:uppercase;letter-spacing:.5px;margin-bottom:12px;text-align:center;}
+.co-form-title span{color:var(--red);}
+.co-group{margin-bottom:11px;}
+.co-group label{display:block;font-size:10px;font-weight:700;color:var(--muted);text-transform:uppercase;letter-spacing:.5px;margin-bottom:4px;}
+.co-group input{width:100%;background:#0a0a0a;border:2px solid rgba(255,255,255,.08);border-radius:10px;padding:13px 14px;font-size:15px;color:var(--text);outline:none;transition:border-color .2s,box-shadow .2s;-webkit-appearance:none;}
+.co-group input::placeholder{color:rgba(255,255,255,.2);}
+.co-group input:focus{border-color:rgba(255,23,68,.5);box-shadow:0 0 0 3px rgba(255,23,68,.1);}
+.bumps-title{font-family:'Montserrat',sans-serif;font-size:12px;font-weight:800;color:var(--text);text-transform:uppercase;letter-spacing:.5px;text-align:center;margin:18px 0 6px;}
+.bump-hint{font-size:11px;color:var(--red);text-align:center;margin-bottom:12px;line-height:1.4;}
+.bump{display:flex;gap:10px;align-items:center;background:var(--bg2);border:2px dashed rgba(255,23,68,.2);border-radius:14px;padding:12px;margin-bottom:10px;cursor:pointer;position:relative;transition:border-color .2s,background .2s;user-select:none;}
+.bump.on{border-style:solid;border-color:var(--red);background:rgba(255,23,68,.05);box-shadow:0 4px 20px rgba(255,23,68,.1);}
+.bump.promo{border-color:rgba(255,214,0,.45);}
+.bump input{-webkit-appearance:none;appearance:none;width:24px;height:24px;border:2px solid rgba(255,255,255,.2);border-radius:7px;flex-shrink:0;cursor:pointer;position:relative;margin:0;background:transparent;transition:all .2s;}
+.bump.on input,.bump input:checked{background:var(--red);border-color:var(--red);}
+.bump input:checked::after{content:'';position:absolute;left:7px;top:3px;width:6px;height:11px;border:solid #fff;border-width:0 2px 2px 0;transform:rotate(45deg);}
+.bump img{width:60px;height:84px;object-fit:cover;object-position:center top;border-radius:8px;flex-shrink:0;border:2px solid rgba(255,23,68,.2);background:var(--bg3);}
+.bump.on img{border-color:rgba(255,23,68,.5);}
+.bump > div{flex:1;}
+.b-name{font-family:'Montserrat',sans-serif;font-size:13px;font-weight:900;color:var(--red);text-transform:uppercase;line-height:1.2;margin-bottom:3px;}
+.b-desc{font-size:11px;color:var(--muted);line-height:1.4;margin-bottom:5px;}
+.b-price{font-size:14px;font-weight:900;color:var(--text);}
+.b-price s{color:var(--muted);font-weight:400;font-size:10px;margin-right:4px;}
+.b-badge{position:absolute;top:-9px;right:14px;background:var(--gold);color:#000;font-size:10px;font-weight:800;padding:2px 9px;border-radius:100px;letter-spacing:.5px;}
+.valor-row{display:flex;justify-content:space-between;align-items:center;background:#0a0a0a;border:1px solid rgba(255,23,68,.15);border-radius:10px;padding:12px 16px;margin:14px 0;}
+.co-total-label{font-size:13px;font-weight:700;color:var(--muted);}
+.co-total-val{font-family:'Montserrat',sans-serif;font-size:20px;font-weight:900;color:var(--red);}
+.co-gatilhos{display:flex;flex-direction:column;gap:6px;background:var(--bg2);border:1px solid rgba(255,255,255,.05);border-radius:12px;padding:12px 14px;margin-bottom:14px;}
+.co-gatilho{display:flex;gap:8px;align-items:flex-start;font-size:11.5px;color:#888;line-height:1.4;}
+.co-gatilho span{flex:1;}
+.co-btn-gerar{width:100%;background:linear-gradient(135deg,var(--red),var(--redd));color:#fff;border:none;border-radius:12px;padding:18px;font-family:'Montserrat',sans-serif;font-size:clamp(13px,4vw,16px);font-weight:900;text-transform:uppercase;letter-spacing:.5px;cursor:pointer;box-shadow:0 8px 32px rgba(255,23,68,.35);animation:cta-pulse 2.2s infinite;position:relative;overflow:hidden;touch-action:manipulation;line-height:1.25;}
+.co-btn-gerar:disabled{opacity:.7;cursor:not-allowed;animation:none;}
+.co-btn-gerar:active{transform:scale(.98);}
+.co-spinner{display:inline-block;width:15px;height:15px;border:2px solid rgba(255,255,255,.3);border-top-color:#fff;border-radius:50%;animation:spin .7s linear infinite;vertical-align:middle;margin-right:7px;}
+@keyframes spin{to{transform:rotate(360deg)}}
+.co-pix-steps{background:var(--bg2);border:1px solid rgba(255,23,68,.1);border-radius:12px;padding:14px;margin-bottom:14px;}
+.co-pix-steps h4{font-family:'Montserrat',sans-serif;font-size:13px;font-weight:800;color:var(--red);text-transform:uppercase;margin-bottom:10px;}
+.co-pix-step{display:flex;gap:10px;align-items:flex-start;margin-bottom:8px;font-size:12px;color:#888;line-height:1.4;}
+.co-step-num{background:var(--red);color:#fff;font-size:10px;font-weight:900;width:20px;height:20px;border-radius:50%;display:flex;align-items:center;justify-content:center;flex-shrink:0;}
+.co-qr-box{text-align:center;margin-bottom:14px;}
+.co-qr-box img{width:min(200px,65vw);height:auto;border:3px solid var(--red);border-radius:12px;padding:6px;background:#fff;display:block;margin:0 auto;}
+.co-qr-label{font-size:11px;font-weight:700;color:var(--muted);margin-top:6px;text-transform:uppercase;letter-spacing:.5px;}
+.co-code-box{background:var(--bg2);border:2px dashed rgba(255,23,68,.25);border-radius:10px;padding:12px;margin-bottom:12px;}
+.co-code-text{font-size:10px;color:#888;word-break:break-all;line-height:1.6;font-family:monospace;}
+.co-btn-copiar{width:100%;background:transparent;color:var(--red);border:2px solid var(--red);border-radius:10px;padding:14px;font-family:'Montserrat',sans-serif;font-size:14px;font-weight:900;cursor:pointer;text-transform:uppercase;letter-spacing:.5px;}
+.co-btn-copiar:active{background:var(--red);color:#fff;}
+.co-pix-urgency{text-align:center;font-size:12px;color:var(--muted);margin-top:12px;}
+.co-pix-urgency strong{color:var(--red);}
+.co-aguardando{display:flex;align-items:center;justify-content:center;gap:8px;font-size:13px;font-weight:700;color:var(--muted);margin-top:14px;}
+.co-pulse-dot{width:10px;height:10px;background:var(--red);border-radius:50%;flex-shrink:0;animation:pdot 1.2s infinite;}
+@keyframes pdot{0%,100%{opacity:1;transform:scale(1)}50%{opacity:.3;transform:scale(.7)}}
+.co-aprovado{text-align:center;padding:18px 0 8px;}
+.co-check-icon{font-size:60px;margin-bottom:10px;}
+.co-aprovado h3{font-family:'Montserrat',sans-serif;font-size:20px;font-weight:900;color:var(--red);text-transform:uppercase;margin-bottom:8px;}
+.co-aprovado p{font-size:13px;color:#888;line-height:1.5;}
+.co-entregavel{margin-top:18px;background:var(--bg2);border:2px solid rgba(255,23,68,.3);border-radius:14px;padding:18px;text-align:center;}
+.co-entregavel .e-icon{font-size:28px;margin-bottom:8px;}
+.co-entregavel .e-title{font-family:'Montserrat',sans-serif;font-size:13px;font-weight:800;color:var(--red);text-transform:uppercase;letter-spacing:.5px;margin-bottom:6px;}
+.co-entregavel .e-sub{font-size:12px;color:var(--muted);margin-bottom:14px;line-height:1.5;}
+.co-entregavel a{display:flex;align-items:center;justify-content:center;gap:8px;background:linear-gradient(135deg,var(--red),var(--redd));color:#fff;font-family:'Montserrat',sans-serif;font-size:15px;font-weight:900;text-transform:uppercase;letter-spacing:.5px;padding:16px;border-radius:10px;text-decoration:none;box-shadow:0 8px 24px rgba(255,23,68,.3);margin-bottom:8px;}
+#accExtra a{background:transparent;color:var(--red);border:2px solid var(--red);box-shadow:none;font-size:13px;}
+.co-entregavel .e-note{font-size:10px;color:#444;margin-top:10px;}
+.co-legal{text-align:center;padding:20px 16px 32px;border-top:1px solid rgba(255,255,255,.04);margin-top:24px;}
+.co-legal p{font-size:10px;color:var(--muted);line-height:1.8;max-width:420px;margin:0 auto;}
+#modalSaida{position:fixed;inset:0;background:rgba(0,0,0,.85);z-index:9998;display:flex;align-items:center;justify-content:center;padding:16px;}
+.co-modal-box{background:#0a0a0a;border:1px solid rgba(255,23,68,.2);border-radius:18px;padding:28px 22px;max-width:380px;width:100%;text-align:center;animation:modal-in .3s ease;}
+@keyframes modal-in{from{transform:scale(.85);opacity:0}to{transform:scale(1);opacity:1}}
+.co-modal-icon{font-size:48px;margin-bottom:10px;}
+.co-modal-box h3{font-family:'Montserrat',sans-serif;font-size:18px;font-weight:900;color:var(--red);text-transform:uppercase;margin-bottom:8px;}
+.co-modal-box p{font-size:13px;color:#888;line-height:1.55;margin-bottom:18px;}
+.co-modal-box p strong{color:var(--red);}
+.co-modal-btns{display:flex;flex-direction:column;gap:10px;}
+.co-btn-stay{background:linear-gradient(135deg,var(--red),var(--redd));color:#fff;border:none;border-radius:10px;padding:15px;font-family:'Montserrat',sans-serif;font-size:14px;font-weight:900;cursor:pointer;text-transform:uppercase;}
+.co-btn-leave{background:none;color:var(--muted);border:none;font-size:12px;cursor:pointer;text-decoration:underline;}
+</style>
+</head>
+<body>
+
+<!-- ====== PORTA DE IDADE ====== -->
+<div id="ageGate" role="dialog" aria-modal="true" aria-label="Verificacao de idade">
+  <div class="ag-bg" aria-hidden="true"></div>
+  <div class="ag-ono ag-ono-1" aria-hidden="true">POW!</div>
+  <div class="ag-ono ag-ono-2" aria-hidden="true">BAM!</div>
+  <div class="ag-ono ag-ono-3" aria-hidden="true">ZAP!</div>
+  <div class="ag-ono ag-ono-4" aria-hidden="true">KA-POW!</div>
+  <div class="ag-card">
+    <span class="ag-warn">&#9888; Conte&uacute;do exclusivo para maiores de 18 anos</span>
+    <h1 class="ag-title">Voc&ecirc; tem <span>18 anos ou mais?</span></h1>
+    <p class="ag-sub">Este conte&uacute;do inclui material adulto +18 e &eacute; exclusivo para maiores de idade. Confirme para continuar.</p>
+    <button class="ag-yes" type="button" onclick="document.getElementById('ageGate').style.display='none';document.documentElement.classList.remove('age-locked');window.scrollTo(0,0);">
+      <span class="ag-check">&#10003;</span> Sim, tenho 18 anos - continuar
+    </button>
+    <a class="ag-no" href="https://www.google.com">N&atilde;o, sou menor de idade</a>
+  </div>
+</div>
+
+<div class="grain" aria-hidden="true"></div>
+
+<div id="page-vendas">
+<div class="top-bar">Oferta especial - so hoje nesta pagina: <span id="topDate"></span></div>
+
+<!-- ============ HERO ============ -->
+<section class="hero">
+  <div class="hero-bg"></div>
+  <div class="hero-glow"></div>
+
+  <h1 class="headline">
+    Tenha acesso a <span class="hl-gold">+🔥</span> Tudo Vitalício e Ilimitado.
+  </h1>
+  <div class="mockup-scene" aria-hidden="true">
+    <div class="mockup-badge">EXCLUSIVO</div>
+    <div class="fan-wrap" id="fanWrap">
+      <!-- EDITAR: substitua cada src abaixo pela URL da sua própria imagem -->
+      <div class="fan-card"><img src="EDITAR_URL_MOCKUP_1" alt="Capa" width="186" height="268" fetchpriority="high" decoding="sync" loading="eager"/></div>
+      <div class="fan-card"><img src="EDITAR_URL_MOCKUP_2" alt="Capa" width="186" height="268" fetchpriority="high" decoding="sync" loading="eager"/></div>
+      <div class="fan-card"><img src="EDITAR_URL_MOCKUP_3" alt="Capa" width="200" height="284" fetchpriority="high" decoding="sync" loading="eager"/></div>
+      <div class="fan-card"><img src="EDITAR_URL_MOCKUP_4" alt="Capa" width="186" height="268" fetchpriority="high" decoding="sync" loading="eager"/></div>
+      <div class="fan-card"><img src="EDITAR_URL_MOCKUP_5" alt="Capa" width="186" height="268" fetchpriority="high" decoding="sync" loading="eager"/></div>
+    </div>
+    <div class="fan-glow"></div>
+  </div>
+
+  <a href="#oferta" class="cta-btn">⚡ QUERO ACESSO AGORA</a>
+  <p class="cta-sub">✅ Acesso imediato · Pagamento único · Leitura offline</p>
+  <div class="ticker-x-wrap" aria-hidden="true">
+    <div class="ticker-band ticker-band-1">
+      <div class="ticker-track">
+        <div class="ticker-item"><span class="t-name">HOJE</span><span class="t-sep">🔥</span></div>
+        <div class="ticker-item"><span class="t-name">ENTREGA IMEDIATA</span><span class="t-sep">⚡</span></div>
+        <div class="ticker-item"><span class="t-name">70.000 s</span><span class="t-sep">🔥</span></div>
+        <div class="ticker-item"><span class="t-name">VENDAS </span><span class="t-sep">🔥</span></div>
+        <div class="ticker-item"><span class="t-name">ENTREGA IMEDIATA</span><span class="t-sep">⚡</span></div>
+        <div class="ticker-item"><span class="t-name">70</span><span class="t-sep">🔥</span></div>
+      </div>
+    </div>
+    <div class="ticker-band ticker-band-2">
+      <div class="ticker-track">
+        <div class="ticker-item"><span class="t-name">SUPORTE INCLUSO</span><span class="t-sep">*</span></div>
+        <div class="ticker-item"><span class="t-name">GARANTIA 7 DIAS</span><span class="t-sep">*</span></div>
+        <div class="ticker-item"><span class="t-name">100% ONLINE</span><span class="t-sep">*</span></div>
+        <div class="ticker-item"><span class="t-name">SUPORTE INCLUSO</span><span class="t-sep">*</span></div>
+        <div class="ticker-item"><span class="t-name">GARANTIA 7 DIAS</span><span class="t-sep">*</span></div>
+        <div class="ticker-item"><span class="t-name">100% ONLINE</span><span class="t-sep">*</span></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ PROVA SOCIAL ============ -->
+<div class="social-proof">
+  <div class="sp-inner">
+    <div class="sp-item"><span class="sp-num">⭐ 4.9</span><span class="sp-label">Avaliação</span></div>
+    <div class="sp-divider"></div>
+    <div class="sp-item"><span class="sp-num">12k+</span><span class="sp-label">Leitores</span></div>
+    <div class="sp-divider"></div>
+    <div class="sp-item"><span class="sp-num">⚡ Imediato</span><span class="sp-label">Acesso</span></div>
+  </div>
+</div>
+
+<!-- ============ CARROSSEL DE EXEMPLOS ============ -->
+<section class="exemplos-section" id="exemplos">
+  <div class="exemplos-header">
+    <p class="section-label">👁️ acervo</p>
+    <h2 class="section-title">Veja alguns <span>exemplos</span></h2>
+    <p>Toque para pausar - toque novamente para continuar</p>
+  </div>
+  <div class="carousel-outer" id="carouselOuter">
+    <div class="carousel-track" id="carTrack">
+      <!-- EDITAR: substitua cada src abaixo pela URL da sua própria imagem. Repita/ajuste a quantidade de itens conforme necessário -->
+      <div class="car-item"><img src="EDITAR_URL_EXEMPLO_01" loading="lazy" decoding="async" width="140" height="210" alt="Exemplo"/></div>
+      <div class="car-item"><img src="EDITAR_URL_EXEMPLO_02" loading="lazy" decoding="async" width="140" height="210" alt="Exemplo"/></div>
+      <div class="car-item"><img src="EDITAR_URL_EXEMPLO_03" loading="lazy" decoding="async" width="140" height="210" alt="Exemplo"/></div>
+      <div class="car-item"><img src="EDITAR_URL_EXEMPLO_04" loading="lazy" decoding="async" width="140" height="210" alt="Exemplo"/></div>
+      <div class="car-item"><img src="EDITAR_URL_EXEMPLO_05" loading="lazy" decoding="async" width="140" height="210" alt="Exemplo"/></div>
+      <div class="car-item"><img src="EDITAR_URL_EXEMPLO_06" loading="lazy" decoding="async" width="140" height="210" alt="Exemplo"/></div>
+      <div class="car-item"><img src="EDITAR_URL_EXEMPLO_07" loading="lazy" decoding="async" width="140" height="210" alt="Exemplo"/></div>
+      <div class="car-item"><img src="EDITAR_URL_EXEMPLO_08" loading="lazy" decoding="async" width="140" height="210" alt="Exemplo"/></div>
+      <div class="car-item"><img src="EDITAR_URL_EXEMPLO_09" loading="lazy" decoding="async" width="140" height="210" alt="Exemplo"/></div>
+      <div class="car-item"><img src="EDITAR_URL_EXEMPLO_10" loading="lazy" decoding="async" width="140" height="210" alt="Exemplo"/></div>
+      <!-- Duplicado abaixo para o loop infinito do carrossel (o script anima translateX(-50%)) -->
+      <div class="car-item"><img src="EDITAR_URL_EXEMPLO_01" loading="lazy" decoding="async" width="140" height="210" alt="Exemplo"/></div>
+      <div class="car-item"><img src="EDITAR_URL_EXEMPLO_02" loading="lazy" decoding="async" width="140" height="210" alt="Exemplo"/></div>
+      <div class="car-item"><img src="EDITAR_URL_EXEMPLO_03" loading="lazy" decoding="async" width="140" height="210" alt="Exemplo"/></div>
+      <div class="car-item"><img src="EDITAR_URL_EXEMPLO_04" loading="lazy" decoding="async" width="140" height="210" alt="Exemplo"/></div>
+      <div class="car-item"><img src="EDITAR_URL_EXEMPLO_05" loading="lazy" decoding="async" width="140" height="210" alt="Exemplo"/></div>
+      <div class="car-item"><img src="EDITAR_URL_EXEMPLO_06" loading="lazy" decoding="async" width="140" height="210" alt="Exemplo"/></div>
+      <div class="car-item"><img src="EDITAR_URL_EXEMPLO_07" loading="lazy" decoding="async" width="140" height="210" alt="Exemplo"/></div>
+      <div class="car-item"><img src="EDITAR_URL_EXEMPLO_08" loading="lazy" decoding="async" width="140" height="210" alt="Exemplo"/></div>
+      <div class="car-item"><img src="EDITAR_URL_EXEMPLO_09" loading="lazy" decoding="async" width="140" height="210" alt="Exemplo"/></div>
+      <div class="car-item"><img src="EDITAR_URL_EXEMPLO_10" loading="lazy" decoding="async" width="140" height="210" alt="Exemplo"/></div>
+    </div>
+  </div>
+  <p class="pause-hint" id="pauseHint"><span>&#9658;</span> toque para pausar</p>
+</section>
+
+<!-- ============ BENEFICIOS ============ -->
+<section class="benefits-section">
+  <div class="inner">
+    <p class="section-label">✨ por que vale a pena</p>
+    <h2 class="section-title">Tudo que você<br>recebe ao comprar hoje</h2>
+    <p class="section-sub">Simples, rápido e 100% discreto.</p>
+    <div class="benefit-item"><div class="benefit-icon">📦</div><div class="benefit-text"><h4>inédito</h4><p>Todas as edições organizadas e prontas para abrir. Material original de época.</p></div></div>
+    <div class="benefit-item"><div class="benefit-icon">⚡</div><div class="benefit-text"><h4>Acesso imediato</h4><p>Pagou, já recebeu. Entrega automática em segundos, sem espera, sem fila.</p></div></div>
+    <div class="benefit-item"><div class="benefit-icon">🔒</div><div class="benefit-text"><h4>Compra 100% discreta</h4><p>Nenhum nome suspeito na fatura. Transação sigilosa do início ao fim.</p></div></div>
+    <div class="benefit-item"><div class="benefit-icon">📲</div><div class="benefit-text"><h4>Funciona em qualquer celular</h4><p>Android ou iPhone — acesse onde e quando quiser, sem restrição alguma.</p></div></div>
+    <div class="benefit-item"><div class="benefit-icon">📶</div><div class="benefit-text"><h4>Veja todo o conteúdo sem precisar de net</h4><p>Baixe uma vez e acesse offline para sempre. Sem internet, sem limitação.</p></div></div>
+    <div class="benefit-item"><div class="benefit-icon">♾️</div><div class="benefit-text"><h4>Acesso vitalício</h4><p>Guarde para sempre. Sem mensalidade, sem renovação, sem prazo de expiração.</p></div></div>
+  </div>
+</section>
+
+<!-- ============ O QUE VOCE RECEBE ============ -->
+<section class="acervo-section">
+  <div class="acervo-inner">
+    <p class="section-label" style="text-align:center">📚 o que você recebe</p>
+    <h2 class="acervo-title">O Maior Acervo<br>Digital do <span>Brasil</span></h2>
+    <div class="acervo-grid">
+      <div class="acervo-card"><div class="ac-header"><span class="ac-icon">📰</span><span class="ac-name">Categoria 1</span></div><ul class="ac-list"><li>Coleções completas das décadas de 50 a 90</li><li>Edições raras que marcaram época</li><li>Jornais e periódicos históricos digitalizados</li></ul></div>
+      <div class="acervo-card ac-hot"><div class="ac-header"><span class="ac-icon">🔥</span><span class="ac-name">Conteúdo Exclusivo</span></div><ul class="ac-list"><li>Mangás e HQs +18 com bônus</li><li>Seleções especiais</li><li>Material exclusivo de diversas épocas</li></ul></div>
+      <div class="acervo-card"><div class="ac-header"><span class="ac-icon">📖</span><span class="ac-name">Livros</span></div><ul class="ac-list"><li>Obras raras e fora de catálogo</li><li>Livros secretos e edições proibidas</li><li>Títulos que você não encontra em lugar nenhum</li></ul></div>
+      <div class="acervo-card ac-gold"><div class="ac-header"><span class="ac-icon">🦸</span><span class="ac-name">+ Histórias</span></div><ul class="ac-list"><li>Mangás variados</li><li>Coleções completas por personagem</li><li>Clássicos e edições especiais</li></ul></div>
+      <div class="acervo-card"><div class="ac-header"><span class="ac-icon">🐱</span><span class="ac-name">+7 Mil Itens</span></div><ul class="ac-list"><li>Clássicos nacionais</li><li>Clássicos dos anos 80 e 90</li><li>Edições especiais e raras</li></ul></div>
+      <div class="acervo-card"><div class="ac-header"><span class="ac-icon">⛩️</span><span class="ac-name">+10 Mil Títulos</span></div><ul class="ac-list"><li>Séries completas (PDF)</li><li>Clássicos e lançamentos</li><li>Dos anos 70 até os dias atuais</li></ul></div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ OFERTA ============ -->
+<section class="offer-section pattern-bg" id="oferta">
+  <div class="inner">
+    <p class="section-label">⚡ condição especial</p>
+    <h2 class="section-title" style="font-family:'Montserrat',sans-serif;font-weight:900">Garanta agora<br>antes que encerre 🔥</h2>
+    <p class="section-sub">Vagas limitadas a este preço. Pagamento único — acesso vitalício.</p>
+    <div class="offer-card">
+      <div class="offer-ribbon">Oferta</div>
+      <div class="offer-title">Pacote Completo</div>
+      <div class="offer-sub">Acesso completo ao maior acervo digital do Brasil</div>
+      <div class="scarcity-bar"><div class="scarcity-fill"></div></div>
+      <p class="scarcity-txt">🔴 Poucas vagas restantes neste preço</p>
+      <div class="price-old">De R$ 97,00 por apenas</div>
+      <div class="price-new"><span>R$</span>17<span>,00</span></div>
+      <div class="price-tag">✅ Você economiza R$ 80,00 hoje</div>
+      <div class="what-you-get">
+        <div class="what-item"><span class="check">🦸</span> Histórias em quadrinhos e muito mais</div>
+        <div class="what-item"><span class="check">🐱</span> +7 mil itens — clássicos e raridades</div>
+        <div class="what-item"><span class="check">⛩️</span> +10 mil títulos completos em PDF</div>
+        <div class="what-item"><span class="check">📰</span> Revistas de época</div>
+        <div class="what-item"><span class="check">🔥</span> Conteúdo exclusivo</div>
+        <div class="what-item"><span class="check">📖</span> Livros e edições fora de catálogo</div>
+        <div class="what-item"><span class="check">🔄</span> Atualização mensal com novos títulos</div>
+        <div class="what-item"><span class="check">♾️</span> Acesso vitalício — sem mensalidade</div>
+        <div class="what-item"><span class="check">⚡</span> Entrega imediata após pagamento</div>
+      </div>
+      <button type="button" class="buy-btn" onclick="irParaCheckout()">QUERO ACESSO AGORA - R$ 17,00</button>
+      <div class="secure-badges">
+        <div class="sec-badge">🔒 Pagamento seguro</div>
+        <div class="sec-badge">⚡ Acesso imediato</div>
+        <div class="sec-badge">📲 Leitura offline</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ DEPOIMENTOS ============
+     ATENÇÃO: use depoimentos reais, com permissão de quem escreveu.
+     Os campos abaixo estão como placeholders — substitua nome/texto por depoimentos verdadeiros. -->
+<section class="depo-section">
+  <div class="depo-inner">
+    <h2 class="depo-title">DEPOIMENTOS:</h2>
+    <div class="depo-box">
+      <p class="depo-count">Mostrando 3 depoimentos</p>
+      <div class="depo-comment"><div class="depo-avatar depo-av1"></div><div class="depo-body"><p class="depo-name">EDITAR_NOME_1</p><p class="depo-text">EDITAR_DEPOIMENTO_1</p><p class="depo-actions">Responder · Curtir · <span>agora</span></p></div></div>
+      <div class="depo-comment"><div class="depo-avatar depo-av2"></div><div class="depo-body"><p class="depo-name">EDITAR_NOME_2</p><p class="depo-text">EDITAR_DEPOIMENTO_2</p><p class="depo-actions">Responder · Curtir · <span>52 min</span></p></div></div>
+      <div class="depo-comment"><div class="depo-avatar depo-av3"></div><div class="depo-body"><p class="depo-name">EDITAR_NOME_3</p><p class="depo-text">EDITAR_DEPOIMENTO_3</p><p class="depo-actions">Responder · Curtir · <span>3h</span></p></div></div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ FAQ ============ -->
+<section class="faq-section">
+  <div class="inner">
+    <p class="section-label">❓ dúvidas frequentes</p>
+    <h2 class="section-title">Perguntas &<br><em style="color:var(--red)">Respostas</em></h2>
+    <p class="section-sub">Tudo o que você precisa saber antes de garantir o seu acesso.</p>
+    <div class="faq-item"><button class="faq-q">Como recebo o acesso após o pagamento?<span class="faq-arrow">▾</span></button><div class="faq-a"><p>O acesso é <strong>100% automático e imediato</strong>. Assim que o pagamento for confirmado, você recebe o link direto no seu e-mail e/ou WhatsApp.</p></div></div>
+    <div class="faq-item"><button class="faq-q">O acervo é grande mesmo?<span class="faq-arrow">▾</span></button><div class="faq-a"><p>Sim. O acervo conta com <strong>milhares de títulos</strong> organizados por categoria.</p></div></div>
+    <div class="faq-item"><button class="faq-q">Precisa de internet para ler?<span class="faq-arrow">▾</span></button><div class="faq-a"><p><strong>Não.</strong> Após baixar os arquivos, você lê completamente offline.</p></div></div>
+    <div class="faq-item"><button class="faq-q">O acesso realmente é vitalício?<span class="faq-arrow">▾</span></button><div class="faq-a"><p>Sim. Você paga <strong>uma única vez</strong> e o acesso é seu para sempre.</p></div></div>
+    <div class="faq-item"><button class="faq-q">Qual a forma de pagamento aceita?<span class="faq-arrow">▾</span></button><div class="faq-a"><p>Aceitamos <strong>PIX</strong>. Ambiente 100% seguro e criptografado. O acesso é liberado em segundos.</p></div></div>
+  </div>
+</section>
+
+<footer>
+  <div class="footer-logo">EDITAR_MARCA</div>
+  <p>
+    Este site nao e afiliado, associado nem endossado pela Meta Platforms, Inc., Facebook ou Instagram.<br>
+    Conteudo destinado exclusivamente a maiores de 18 anos.<br>
+    &copy; <span id="footYear"></span> EDITAR_SUA_MARCA - Todos os direitos reservados - Politica de privacidade
+  </p>
+</footer>
+</div><!-- /page-vendas -->
+
+<!-- ============================================================
+     CHECKOUT (PIX) - aparece ao clicar nos CTAs (irParaCheckout)
+============================================================ -->
+<div id="page-checkout">
+
+  <div class="co-hero">
+    <!-- EDITAR: URL do banner do checkout -->
+    <img class="co-banner" src="EDITAR_URL_BANNER_CHECKOUT" alt="">
+    <div class="co-hero-overlay"></div>
+    <div class="co-hero-content">
+      <div class="co-badge">🔓 Última etapa — acesso garantido</div>
+      <h1 class="co-hero-title">Finalize agora e receba<br><span class="hl-red"></span> na hora</h1>
+    </div>
+  </div>
+  <div class="co-main">
+
+    <!-- ===== TELA DE VENDA (form + bumps) ===== -->
+    <div id="sec-venda">
+
+      <div class="co-product">
+        <img class="co-cover" id="prodImg" src="" alt="" onerror="this.style.opacity=.3">
+        <div>
+          <div class="co-prod-name" id="prodNome">Pacote Completo</div>
+          <div class="co-prod-desc">Acesso vitalício ao material</div>
+          <div class="co-prod-old">De R$ 97,00 por</div>
+          <div class="co-prod-price"><span id="prodPreco">R$ 17,00</span> <span class="desc-tag hidden" id="descTag">20% OFF aplicado</span></div>
+        </div>
+      </div>
+
+      <div class="co-form-title">Preencha para <span>liberar seu acesso</span></div>
+      <div class="co-group"><label>Nome completo</label><input type="text" id="fNome" placeholder="Seu nome" autocomplete="name"></div>
+      <div class="co-group"><label>E-mail</label><input type="email" id="fEmail" placeholder="seuemail@gmail.com" autocomplete="email"></div>
+      <div class="co-group"><label>WhatsApp</label><input type="tel" id="fCel" placeholder="(11) 99999-9999" autocomplete="tel"></div>
+      <div class="co-group"><label>CPF</label><input type="tel" id="fCpf" placeholder="000.000.000-00" autocomplete="off" inputmode="numeric"></div>
+
+      <div class="bumps-title" id="bumpsTitulo">Adicione mais itens com desconto</div>
+      <p class="bump-hint"></p>
+      <div id="bumpsBox"></div>
+
+      <div class="valor-row">
+        <span class="co-total-label">Total a pagar:</span>
+        <span class="co-total-val" id="totalVal">R$ 17,00</span>
+      </div>
+
+      <div class="co-gatilhos">
+        <div class="co-gatilho">&#128274; <span>Compra 100% segura e criptografada</span></div>
+        <div class="co-gatilho">&#9889; <span>Acesso liberado em segundos apos o pagamento</span></div>
+        <div class="co-gatilho">&#9851; <span>Vitalicio - pague uma vez, acesse para sempre</span></div>
+      </div>
+
+      <button type="button" class="co-btn-gerar" id="btnGerar">GERAR PIX E GARANTIR ACESSO - R$ 17,00</button>
+    </div>
+
+    <!-- ===== TELA DO PIX (QR + copia e cola) ===== -->
+    <div id="sec-pix" class="hidden">
+      <div class="co-pix-steps">
+        <h4>Como pagar:</h4>
+        <div class="co-pix-step"><span class="co-step-num">1</span><span>Abra o app do seu banco</span></div>
+        <div class="co-pix-step"><span class="co-step-num">2</span><span>Escolha PIX -> Copia e Cola (ou escaneie o QR)</span></div>
+        <div class="co-pix-step"><span class="co-step-num">3</span><span>Cole o codigo ou aponte a camera para o QR</span></div>
+        <div class="co-pix-step"><span class="co-step-num">4</span><span>Confirme - seu acesso libera automaticamente</span></div>
+      </div>
+      <div class="co-qr-box">
+        <img id="qrImg" src="" alt="QR Code PIX">
+        <p class="co-qr-label">Escaneie o QR Code</p>
+      </div>
+      <div class="co-code-box"><div class="co-code-text" id="copiaTxt"></div></div>
+      <button type="button" class="co-btn-copiar" id="btnCopiar">COPIAR CODIGO PIX</button>
+      <div class="co-pix-urgency" id="pixUrgency">Este PIX expira em <strong id="pixTimer">15:00</strong></div>
+      <div class="co-aguardando"><span class="co-pulse-dot"></span><span id="statusTxt">Aguardando pagamento...</span></div>
+    </div>
+
+    <!-- ===== TELA DE APROVADO (entregavel) ===== -->
+    <div id="sec-obrigado" class="hidden">
+      <div class="co-aprovado">
+        <div class="co-check-icon">&#9989;</div>
+        <h3>Pagamento Aprovado!</h3>
+        <p>Seu acesso foi liberado. Confira seu e-mail e WhatsApp.</p>
+      </div>
+      <div class="co-entregavel">
+        <div class="e-icon">&#127873;</div>
+        <div class="e-title">Seu acesso esta pronto!</div>
+        <div class="e-sub">Clique abaixo para acessar seu conteudo agora</div>
+        <a id="accPrincipal" href="#" target="_blank" rel="noopener">ACESSAR MEU CONTEUDO AGORA</a>
+        <div id="accExtra"></div>
+        <div class="e-note">Guarde este link - ele e seu</div>
+      </div>
+    </div>
+
+    <div class="co-legal">
+      <p>Este site nao e afiliado a Meta Platforms, Inc. - Conteudo destinado a maiores de 18 anos.</p>
+    </div>
+
+  </div>
+</div>
+
+<!-- modal de saida (cupom 20%) -->
+<div id="modalSaida" class="hidden">
+  <div class="co-modal-box">
+    <div class="co-modal-icon">&#9888;</div>
+    <h3>Espere! Tem um desconto pra voce</h3>
+    <p>Aplique <strong>20% OFF</strong> agora e finalize seu acesso com preco menor.</p>
+    <div class="co-modal-btns">
+      <button type="button" class="co-btn-stay" id="btnAplicarDesc">APLICAR 20% DE DESCONTO</button>
+      <button type="button" class="co-btn-leave" id="btnPularDesc">Nao quero o desconto</button>
+    </div>
+  </div>
+</div>
+
+
+<script>
+document.getElementById('topDate').textContent =
+  new Date().toLocaleDateString('pt-BR',{day:'2-digit',month:'2-digit',year:'numeric'});
+document.getElementById('footYear').textContent = new Date().getFullYear();
+
+/* anima as cartas do hero subindo */
+function initFan(){
+  var cards=document.querySelectorAll('.fan-card');
+  requestAnimationFrame(function(){setTimeout(function(){cards.forEach(function(c){c.classList.add('animate');});},60);});
+}
+
+/* carrossel: pausa/continua ao tocar, pausa fora da tela */
+function initCarousel(){
+  var outer=document.getElementById('carouselOuter');
+  var track=document.getElementById('carTrack');
+  var hint=document.getElementById('pauseHint');
+  if(!outer||!track)return;
+  var paused=false;
+  outer.addEventListener('click',function(){
+    paused=!paused;
+    track.style.animationPlayState=paused?'paused':'running';
+    hint.innerHTML=paused?'<span>&#10073;&#10073;</span> pausado - toque para continuar':'<span>&#9658;</span> toque para pausar';
+    hint.classList.toggle('is-paused',paused);
+  });
+  document.addEventListener('visibilitychange',function(){
+    if(document.hidden){track.style.animationPlayState='paused';}
+    else if(!paused){track.style.animationPlayState='running';}
+  });
+  if('IntersectionObserver' in window){
+    var io=new IntersectionObserver(function(entries){
+      entries.forEach(function(e){ if(!paused) track.style.animationPlayState=e.isIntersecting?'running':'paused'; });
+    },{threshold:0.1});
+    io.observe(outer);
+  }
+}
+
+/* FAQ accordion */
+function initFaq(){
+  document.querySelectorAll('.faq-q').forEach(function(btn){
+    btn.addEventListener('click',function(){
+      var item=btn.closest('.faq-item');
+      var isOpen=item.classList.contains('open');
+      document.querySelectorAll('.faq-item').forEach(function(i){i.classList.remove('open');});
+      if(!isOpen)item.classList.add('open');
+    });
+  });
+}
+
+/* rolagem suave dos links ancora */
+function initAnchors(){
+  document.querySelectorAll('a[href^="#"]').forEach(function(a){
+    a.addEventListener('click',function(e){
+      var href=a.getAttribute('href');
+      if(href.length<2)return;
+      var t=document.querySelector(href);
+      if(t){e.preventDefault();t.scrollIntoView({behavior:'smooth',block:'start'});}
+    });
+  });
+}
+
+/* ===================================================================
+   CHECKOUT - engenharia PIX (Mercado Pago) + Pixel/CAPI
+   Os precos abaixo precisam ser IGUAIS aos de /api/criar-pix.js
+   =================================================================== */
+var CFG = {
+  PIXEL_ID: "EDITAR_PIXEL_ID",                 /* EDITAR: mesmo do bloco do Pixel no <head> */
+  MOEDA: "BRL",
+  ITEM_LABEL: "itens",                  /* EDITAR: palavra usada na copy (ex: itens, modulos, ebooks) */
+
+  PRODUTO: {
+    nome:  "EDITAR_NOME_PRODUTO",               /* EDITAR */
+    preco: 17.00,                       /* EDITAR (precisa bater com criar-pix.js) */
+    capa:  "EDITAR_URL_CAPA_PRODUTO"    /* EDITAR */
+  },
+
+  DESCONTO_PCT: 20,                     /* cupom do modal de saida (incide so no preco do produto) */
+
+  /* Links liberados na tela de aprovado - EDITAR cada um */
+  ACESSOS: {
+    principal: "EDITAR_URL_ACESSO_PRINCIPAL",  /* EDITAR */
+    bump1: "EDITAR_URL_ACESSO_BUMP1",          /* EDITAR */
+    bump2: "EDITAR_URL_ACESSO_BUMP2"           /* EDITAR */
+  },
+
+  BUMP_BASE: 7.90,                      /* preco de cada bump quando 1 marcado */
+  /* unitario conforme a QTD marcada. idx0 = 1 bump, idx1 = 2 bumps.
+     ATENCAO: precisa bater com BUMP_TIERS de /api/criar-pix.js */
+  BUMP_TIERS: [7.90, 6.90],
+
+  /* 2 bumps - EDITAR nome, desc, img (o preco vem dos tiers acima) */
+  BUMPS: [
+    { id:"bump1", nome:"EDITAR_NOME_BUMP1", desc:"EDITAR_DESCRICAO_BUMP1", img:"EDITAR_URL_IMAGEM_BUMP1" },
+    { id:"bump2", nome:"EDITAR_NOME_BUMP2", desc:"EDITAR_DESCRICAO_BUMP2", img:"EDITAR_URL_IMAGEM_BUMP2" }
+  ]
+};
+
+var state = {
+  descontoAtivo:false, bumps:{}, icDisparado:false, modalMostrado:false,
+  paymentId:null, valorCobrado:null, pollTimer:null, expiraTimer:null, backTrap:false
+};
+
+function $(id){ return document.getElementById(id); }
+function brl(v){ return "R$ " + v.toFixed(2).replace(".", ","); }
+function novoEventId(){ return "ev_" + Date.now() + "_" + Math.random().toString(36).slice(2,10); }
+function getCookie(name){ var m=document.cookie.match(new RegExp("(^| )"+name+"=([^;]+)")); return m?m[2]:""; }
+
+/* dispara o MESMO evento no Pixel (navegador) e na CAPI (servidor) com o mesmo event_id (dedup) */
+function track(eventName, custom){
+  var eid = novoEventId();
+  try{ if(window.fbq){ fbq("track", eventName, custom||{}, { eventID: eid }); } }catch(e){ console.log("pixel", e); }
+  var payload = {
+    event_name: eventName, event_id: eid, event_source_url: location.href,
+    fbp: getCookie("_fbp"), fbc: getCookie("_fbc"), custom_data: custom||{},
+    user: {
+      email: ($("fEmail")?$("fEmail").value.trim():""),
+      phone: ($("fCel")?$("fCel").value.replace(/\D/g,""):""),
+      nome:  ($("fNome")?$("fNome").value.trim():"")
+    }
+  };
+  try{ fetch("/api/meta-event",{method:"POST",headers:{"Content-Type":"application/json"},body:JSON.stringify(payload)}).catch(function(){}); }catch(e){}
+  return eid;
+}
+
+/* ---- calculo de preco (cliente exibe; servidor recalcula ao cobrar) ---- */
+function round2(v){ return Math.round(v*100)/100; }
+function precoBase(){ var p=CFG.PRODUTO.preco; if(state.descontoAtivo){ p=p*(1-CFG.DESCONTO_PCT/100); } return round2(p); }
+function bumpUnit(qtd){ if(qtd<=0) return CFG.BUMP_TIERS[0]; var idx=Math.min(qtd,CFG.BUMP_TIERS.length)-1; return CFG.BUMP_TIERS[idx]; }
+function bumpsSelecionados(){ return CFG.BUMPS.filter(function(b){ return state.bumps[b.id]; }).map(function(b){ return b.id; }); }
+function precoBumps(){ var q=bumpsSelecionados().length; if(q===0) return 0; return round2(bumpUnit(q)*q); }
+function totalAtual(){ return round2(precoBase()+precoBumps()); }
+function economiaBumps(){ var q=bumpsSelecionados().length; if(q===0) return 0; return round2(CFG.BUMP_BASE*q - bumpUnit(q)*q); }
+
+function atualizarTotal(){
+  refreshBumps();
+  $("totalVal").textContent = brl(totalAtual());
+  $("prodPreco").textContent = brl(precoBase());
+  if($("descTag")) $("descTag").classList.toggle("hidden", !state.descontoAtivo);
+  var btn=$("btnGerar");
+  if(btn && !btn.disabled) btn.textContent = "GERAR PIX E GARANTIR ACESSO - " + brl(totalAtual());
+  refreshHint();
+}
+function refreshHint(){
+  var hint=document.querySelector(".bump-hint"); if(!hint) return;
+  var q=bumpsSelecionados().length, eco=economiaBumps(), total=CFG.BUMPS.length;
+  if(q===0){ hint.textContent="Quanto mais "+CFG.ITEM_LABEL+" voce leva, mais desconto recebe hoje."; }
+  else if(q>=total && eco>0){ hint.textContent="Desconto maximo destravado: voce economizou "+brl(eco)+" hoje!"; }
+  else if(eco>0){ hint.textContent="Voce ja esta economizando "+brl(eco)+" hoje - adicione mais e aumente!"; }
+  else{ hint.textContent="Adicione mais 1 e comece a destravar seu desconto."; }
+}
+
+/* ---- render dos bumps (com piramide de desconto) ---- */
+var bumpRows={};
+function renderBumps(){
+  var box=$("bumpsBox"); box.innerHTML=""; bumpRows={};
+  CFG.BUMPS.forEach(function(b){
+    var row=document.createElement("label");
+    row.className="bump"; row.setAttribute("data-id",b.id);
+    row.innerHTML =
+      '<span class="b-badge hidden"></span>'+
+      '<input type="checkbox" />'+
+      '<img src="'+b.img+'" alt="" onerror="this.style.opacity=.3" loading="lazy"/>'+
+      '<div><div class="b-name">'+b.nome+'</div><div class="b-desc">'+b.desc+'</div><div class="b-price"></div></div>';
+    var chk=row.querySelector("input");
+    chk.addEventListener("change",function(){ state.bumps[b.id]=chk.checked; atualizarTotal(); });
+    bumpRows[b.id]={ row:row, priceEl:row.querySelector(".b-price"), badgeEl:row.querySelector(".b-badge") };
+    box.appendChild(row);
+  });
+  refreshBumps();
+}
+function refreshBumps(){
+  var qtd=bumpsSelecionados().length, base=CFG.BUMP_BASE, unit=qtd>0?bumpUnit(qtd):base;
+  var off=base>unit?Math.round((1-unit/base)*100):0;
+  CFG.BUMPS.forEach(function(b){
+    var ref=bumpRows[b.id]; if(!ref) return;
+    var marcado=!!state.bumps[b.id];
+    ref.row.classList.toggle("on",marcado);
+    ref.row.classList.toggle("promo",off>0 && !marcado);
+    if(off>0){ ref.priceEl.innerHTML='<s>'+brl(base)+'</s>'+brl(unit); ref.badgeEl.textContent="-"+off+"%"; ref.badgeEl.classList.remove("hidden"); }
+    else{ ref.priceEl.innerHTML=brl(unit); ref.badgeEl.classList.add("hidden"); }
+  });
+}
+
+/* ---- mascara de celular ---- */
+function mascaraCel(v){ v=v.replace(/\D/g,"").slice(0,11); if(v.length<=2) return v.length?"("+v:v; if(v.length<=7) return "("+v.slice(0,2)+") "+v.slice(2); return "("+v.slice(0,2)+") "+v.slice(2,7)+"-"+v.slice(7); }
+
+/* ---- mascara e validacao de CPF ---- */
+function mascaraCpf(v){
+  v=v.replace(/\D/g,"").slice(0,11);
+  if(v.length<=3) return v;
+  if(v.length<=6) return v.slice(0,3)+"."+v.slice(3);
+  if(v.length<=9) return v.slice(0,3)+"."+v.slice(3,6)+"."+v.slice(6);
+  return v.slice(0,3)+"."+v.slice(3,6)+"."+v.slice(6,9)+"-"+v.slice(9);
+}
+function cpfValido(v){
+  var d=String(v).replace(/\D/g,"");
+  if(d.length!==11) return false;
+  if(/^(\d)\1{10}$/.test(d)) return false; // rejeita 000.., 111.. etc
+  var soma=0,i;
+  for(i=0;i<9;i++) soma+=parseInt(d[i],10)*(10-i);
+  var r1=(soma*10)%11; if(r1===10) r1=0;
+  if(r1!==parseInt(d[9],10)) return false;
+  soma=0;
+  for(i=0;i<10;i++) soma+=parseInt(d[i],10)*(11-i);
+  var r2=(soma*10)%11; if(r2===10) r2=0;
+  if(r2!==parseInt(d[10],10)) return false;
+  return true;
+}
+
+/* ---- navegacao: landing -> checkout ---- */
+function irParaCheckout(){
+  if($("page-vendas")) $("page-vendas").style.display="none";
+  $("page-checkout").style.display="block";
+  window.scrollTo(0,0);
+  /* trap do botao voltar (mobile) ativado SO ao entrar no checkout */
+  if(!state.backTrap){
+    state.backTrap=true;
+    try{
+      history.pushState(null,"",location.href);
+      window.addEventListener("popstate",function(){
+        if($("page-checkout").style.display==="block" && !$("sec-venda").classList.contains("hidden") && !state.modalMostrado){
+          abrirModalSaida(); history.pushState(null,"",location.href);
+        }
+      });
+    }catch(e){}
+  }
+}
+
+/* ---- modal de saida (cupom) ---- */
+function abrirModalSaida(){
+  if(state.modalMostrado) return;
+  if($("page-checkout").style.display!=="block") return;     /* so quando o checkout esta aberto */
+  if($("sec-venda").classList.contains("hidden")) return;    /* nao na tela de PIX/aprovado */
+  state.modalMostrado=true;
+  $("modalSaida").classList.remove("hidden");
+}
+function setupExitIntent(){
+  document.addEventListener("mouseout",function(e){ if(!e.relatedTarget && e.clientY<=0) abrirModalSaida(); });
+  if($("btnAplicarDesc")) $("btnAplicarDesc").addEventListener("click",function(){
+    state.descontoAtivo=true; atualizarTotal();
+    $("modalSaida").classList.add("hidden");
+    track("ViewContent",{content_name:"cupom_20_aplicado"});
+    var alvo=document.querySelector(".valor-row"); if(alvo) alvo.scrollIntoView({behavior:"smooth",block:"center"});
+  });
+  if($("btnPularDesc")) $("btnPularDesc").addEventListener("click",function(){ $("modalSaida").classList.add("hidden"); });
+}
+
+/* ---- gerar PIX ---- */
+function setupCheckout(){
+  var nome=$("fNome"), cel=$("fCel"), email=$("fEmail"), cpf=$("fCpf"), btn=$("btnGerar");
+  cel.addEventListener("input",function(){ cel.value=mascaraCel(cel.value); });
+  cpf.addEventListener("input",function(){ cpf.value=mascaraCpf(cpf.value); });
+  nome.addEventListener("input",function(){
+    if(!state.icDisparado && nome.value.trim().length>=2){ state.icDisparado=true; track("InitiateCheckout",{value:totalAtual(),currency:CFG.MOEDA}); }
+  });
+  btn.addEventListener("click",gerarPix);
+
+  function valido(){
+    if(nome.value.trim().length<3){ alert("Digite seu nome completo."); nome.focus(); return false; }
+    var dig=cel.value.replace(/\D/g,""); if(dig.length<10){ alert("Digite um WhatsApp valido com DDD."); cel.focus(); return false; }
+    if(!/^[^@\s]+@[^@\s]+\.[^@\s]+$/.test(email.value.trim())){ alert("Digite um e-mail valido."); email.focus(); return false; }
+    if(!cpfValido(cpf.value)){ alert("Digite um CPF valido."); cpf.focus(); return false; }
+    return true;
+  }
+  function gerarPix(){
+    if(!valido()) return;
+    btn.disabled=true; btn.innerHTML='<span class="co-spinner"></span> GERANDO PIX...';
+    var body={ nome:nome.value.trim(), email:email.value.trim(), celular:cel.value.replace(/\D/g,""), cpf:cpf.value.replace(/\D/g,""), desconto:state.descontoAtivo, bumps:bumpsSelecionados() };
+    fetch("/api/criar-pix",{method:"POST",headers:{"Content-Type":"application/json"},body:JSON.stringify(body)})
+    .then(function(r){ return r.json(); })
+    .then(function(data){
+      if(!data || !data.qr_code){ throw new Error(data && data.error ? data.error : "Falha ao gerar PIX"); }
+      state.paymentId=data.payment_id;
+      state.valorCobrado=(typeof data.valor==="number")?data.valor:totalAtual();
+      track("AddPaymentInfo",{value:state.valorCobrado,currency:CFG.MOEDA});
+      mostrarPix(data);
+    })
+    .catch(function(err){ console.log("gerarPix error",err); alert("Nao foi possivel gerar o PIX agora. Tente novamente."); btn.disabled=false; atualizarTotal(); });
+  }
+  function mostrarPix(data){
+    $("sec-venda").classList.add("hidden");
+    $("sec-pix").classList.remove("hidden");
+    window.scrollTo(0,0);
+    if(data.qr_code_base64){ $("qrImg").src="data:image/png;base64,"+data.qr_code_base64; }
+    $("copiaTxt").textContent=data.qr_code;
+    iniciarTimer(15*60); iniciarPolling();
+  }
+  $("btnCopiar").addEventListener("click",function(){
+    var txt=$("copiaTxt").textContent||"";
+    function ok(){ $("btnCopiar").textContent="CODIGO COPIADO!"; setTimeout(function(){ $("btnCopiar").textContent="COPIAR CODIGO PIX"; },2000); }
+    if(navigator.clipboard && navigator.clipboard.writeText){ navigator.clipboard.writeText(txt).then(ok).catch(function(){ legacyCopy(txt); ok(); }); }
+    else{ legacyCopy(txt); ok(); }
+  });
+  function legacyCopy(txt){ var ta=document.createElement("textarea"); ta.value=txt; document.body.appendChild(ta); ta.select(); try{ document.execCommand("copy"); }catch(e){} document.body.removeChild(ta); }
+}
+
+function iniciarTimer(segundos){
+  var t=segundos;
+  function tick(){
+    var m=Math.floor(t/60), s=t%60;
+    if($("pixTimer")) $("pixTimer").textContent=(m<10?"0":"")+m+":"+(s<10?"0":"")+s;
+    if(t<=0){ clearInterval(state.expiraTimer); if($("pixUrgency")) $("pixUrgency").textContent="Tempo esgotado - gere um novo PIX se precisar."; return; }
+    t--;
+  }
+  tick(); state.expiraTimer=setInterval(tick,1000);
+}
+
+function iniciarPolling(){
+  if(!state.paymentId) return;
+  state.pollTimer=setInterval(function(){
+    fetch("/api/status-pix?id="+encodeURIComponent(state.paymentId))
+    .then(function(r){ return r.json(); })
+    .then(function(d){
+      if(d && d.status==="approved"){ clearInterval(state.pollTimer); clearInterval(state.expiraTimer); aprovado(); }
+      else if(d && (d.status==="rejected" || d.status==="cancelled")){ clearInterval(state.pollTimer); if($("statusTxt")) $("statusTxt").textContent="Pagamento nao concluido. Gere um novo PIX."; }
+    })
+    .catch(function(e){ console.log("status error",e); });
+  },4000);
+}
+
+function aprovado(){
+  var valor=(typeof state.valorCobrado==="number")?state.valorCobrado:totalAtual();
+  track("Purchase",{value:valor,currency:CFG.MOEDA});
+  $("sec-pix").classList.add("hidden");
+  $("sec-obrigado").classList.remove("hidden");
+  window.scrollTo(0,0);
+  if($("accPrincipal")) $("accPrincipal").href=CFG.ACESSOS.principal;
+  var extra=$("accExtra");
+  if(extra){
+    extra.innerHTML="";
+    CFG.BUMPS.forEach(function(b){
+      if(state.bumps[b.id]){ var a=document.createElement("a"); a.href=CFG.ACESSOS[b.id]||"#"; a.target="_blank"; a.rel="noopener"; a.textContent="Acessar: "+b.nome; extra.appendChild(a); }
+    });
+  }
+}
+
+/* ---- init do checkout (roda na carga; elementos existem escondidos) ---- */
+(function initCheckout(){
+  if(!$("bumpsBox")) return;  /* so roda se o checkout existe nesta pagina */
+  $("prodNome").textContent=CFG.PRODUTO.nome;
+  $("prodImg").src=CFG.PRODUTO.capa;
+  var tb=$("bumpsTitulo"); if(tb) tb.textContent="Adicione mais "+CFG.ITEM_LABEL+" com desconto";
+  renderBumps();
+  atualizarTotal();
+  setupCheckout();
+  setupExitIntent();
+  track("ViewContent",{ content_name:CFG.PRODUTO.nome, value:CFG.PRODUTO.preco, currency:CFG.MOEDA });
+})();
+
+
+window.addEventListener('load',function(){
+  setTimeout(function(){ initFan(); initCarousel(); initFaq(); initAnchors(); },100);
+});
+</script>
+</body>
+</html>
