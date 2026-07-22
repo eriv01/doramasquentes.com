@@ -721,6 +721,7 @@ function iniciarPolling(){
 }
 
 function aprovado(){
+  try{localStorage.removeItem('pix_payment_id');localStorage.removeItem('pix_valor');}catch(e){}
   var valor=(typeof state.valorCobrado==="number")?state.valorCobrado:totalAtual();
   track("Purchase",{value:valor,currency:CFG.MOEDA});
   $("sec-pix").classList.add("hidden");$("sec-obrigado").classList.remove("hidden");window.scrollTo(0,0);
