@@ -1,11 +1,14 @@
 <!DOCTYPE html>
-<html lang="pt-BR" class="age-locked">
+<html lang="pt-BR" class="pressel-on">
 <head>
+
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=5.0, viewport-fit=cover">
 <meta name="theme-color" content="#000000">
-<title>SEU INFOPRODUTO AQUI</title>
+<meta name="robots" content="noindex, nofollow">
+<title>Pack 1200 Artes IA Estilo Anime</title>
 
+<!-- ============ META PIXEL - EDITAR PIXEL_ID ============ -->
 <script>
 !function(f,b,e,v,n,t,s)
 {if(f.fbq)return;n=f.fbq=function(){n.callMethod?
@@ -15,11 +18,12 @@ n.queue=[];t=b.createElement(e);t.async=!0;
 t.src=v;s=b.getElementsByTagName(e)[0];
 s.parentNode.insertBefore(t,s)}(window, document,'script',
 'https://connect.facebook.net/en_US/fbevents.js');
-fbq('init', '1589106396227229');
+fbq('init', 'EDITAR_PIXEL_ID');     /* EDITAR */
 fbq('track', 'PageView');
 </script>
 <noscript><img height="1" width="1" style="display:none"
-src="https://www.facebook.com/tr?id=1589106396227229&ev=PageView&noscript=1"/></noscript>
+src="https://www.facebook.com/tr?id=EDITAR_PIXEL_ID&ev=PageView&noscript=1"/></noscript>
+<!-- ====================== fim do Pixel ====================== -->
 
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -33,20 +37,49 @@ body{background:var(--bg);color:var(--text);font-family:'DM Sans',sans-serif;ove
 img{display:block;max-width:100%;height:auto;border:0}
 a{color:inherit;text-decoration:none}
 button{font-family:inherit;cursor:pointer;border:none;background:none;color:inherit}
+/* MOBILE: mata o atraso de 300ms no toque */
+button,a,label,input,select{touch-action:manipulation}
+/* ACESSIBILIDADE: foco visivel para teclado */
+:focus-visible{outline:2px solid var(--gold);outline-offset:2px;border-radius:4px}
+/* Nada e desligado: tudo continua animado. Para quem marcou "reduzir
+   movimento" no sistema, as animacoes so ficam mais lentas — movimento
+   lento incomoda muito menos do que movimento rapido, e as faixas
+   seguem cumprindo a funcao. */
+@media (prefers-reduced-motion:reduce){
+  .carousel-track{animation-duration:70s!important}
+  .ticker-band-1 .ticker-track{animation-duration:45s!important}
+  .ticker-band-2 .ticker-track{animation-duration:55s!important}
+  .cta-btn,.buy-btn,.co-btn-gerar,.ag-yes{animation-duration:5s!important}
+  .hero-glow,.fan-glow{animation-duration:8s!important}
+}
 .grain{position:fixed;inset:0;background-image:url("data:image/svg+xml,%3Csvg viewBox='0 0 256 256' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.9' numOctaves='4' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)' opacity='0.04'/%3E%3C/svg%3E");pointer-events:none;z-index:999;opacity:.25;}
 .top-bar{background:linear-gradient(90deg,var(--redd),var(--red),var(--redd));padding:10px 16px;text-align:center;font-size:.75rem;font-weight:700;letter-spacing:1px;color:#1a0004;position:relative;z-index:10;padding-top:calc(10px + env(safe-area-inset-top,0px));}
-/* HERO — overflow:visible para o video aparecer */
-.hero{position:relative;min-height:100svh;display:flex;flex-direction:column;align-items:center;justify-content:flex-start;padding:clamp(28px,5vw,48px) clamp(16px,5vw,24px) 20px;text-align:center;overflow:visible;}
+.hero{position:relative;min-height:100svh;display:flex;flex-direction:column;align-items:center;justify-content:flex-start;padding:clamp(28px,5vw,48px) clamp(16px,5vw,24px) 20px;text-align:center;overflow:hidden;}
 .hero-bg{position:absolute;inset:0;background:radial-gradient(ellipse 80% 50% at 50% 0%,rgba(255,23,68,.09) 0%,transparent 65%),radial-gradient(ellipse 50% 30% at 80% 90%,rgba(255,214,0,.06) 0%,transparent 60%),var(--bg);z-index:0;}
 .hero-glow{position:absolute;width:min(300px,80vw);height:min(300px,80vw);border-radius:50%;background:radial-gradient(circle,rgba(255,23,68,.14) 0%,transparent 70%);top:-80px;left:50%;transform:translateX(-50%);animation:glow-pulse 4s ease-in-out infinite;z-index:0;}
 @keyframes glow-pulse{0%,100%{opacity:.5;transform:translateX(-50%) scale(1)}50%{opacity:1;transform:translateX(-50%) scale(1.15)}}
-.headline{position:relative;z-index:1;font-family:'Montserrat',sans-serif;font-size:clamp(1.45rem,5.5vw,2.4rem);font-weight:900;line-height:1.2;letter-spacing:-.3px;margin-bottom:20px;max-width:min(420px,100%);}
+.headline{position:relative;z-index:1;font-family:'Montserrat',sans-serif;font-size:clamp(1.45rem,5.5vw,2.4rem);font-weight:900;line-height:1.2;letter-spacing:-.3px;margin-bottom:10px;max-width:min(420px,100%);}
 .headline .hl-gold{color:var(--gold)}
-/* VIDEO HERO */
-.hero-video-wrap{position:relative;z-index:1;width:200px;height:355px;margin:0 auto 24px;border-radius:16px;overflow:hidden;border:3px solid var(--red);box-shadow:0 8px 32px rgba(255,23,68,.4),0 0 60px rgba(255,23,68,.2);flex-shrink:0;}
-.hero-video-wrap video{width:100%;height:100%;object-fit:cover;display:block;}
-/* ESCONDE mockup antigo */
-.mockup-scene{display:none!important;}
+/* ---- VIDEO DO HERO (vertical 9:16) ----
+   aspect-ratio reserva o espaco antes do video carregar. Sem isso a
+   pagina "pula" quando ele aparece, justo enquanto o cliente le. */
+.hero-video-wrap{position:relative;z-index:1;width:100%;max-width:min(300px,72vw);margin:0 auto clamp(28px,5vw,40px);border-radius:var(--r);overflow:hidden;border:2px solid rgba(255,23,68,.6);box-shadow:0 20px 60px rgba(0,0,0,.75),0 0 50px rgba(255,23,68,.18);background:#0a0a0a;aspect-ratio:9/16;}
+.hero-video-wrap video{width:100%;height:100%;object-fit:cover;display:block}
+.hero-video-wrap::after{content:'';position:absolute;inset:0;background:linear-gradient(180deg,transparent 62%,rgba(0,0,0,.55) 100%);pointer-events:none}
+.video-som{position:absolute;bottom:12px;right:12px;z-index:22;width:44px;height:44px;border-radius:50%;background:rgba(0,0,0,.6);border:1px solid rgba(255,255,255,.25);backdrop-filter:blur(4px);font-size:19px;line-height:1;display:flex;align-items:center;justify-content:center;color:#fff;}
+.video-som:active{transform:scale(.92)}
+.video-som.mudo{background:rgba(0,0,0,.72)}
+/* capa de play sobre o video */
+.video-capa{position:absolute;inset:0;z-index:24;width:100%;display:flex;flex-direction:column;align-items:center;justify-content:center;gap:14px;background:rgba(0,0,0,.42);border:none;padding:0;transition:opacity .3s ease;}
+.video-capa.saindo{opacity:0;pointer-events:none}
+.vc-play{width:74px;height:74px;border-radius:50%;background:linear-gradient(135deg,var(--red),var(--redd));box-shadow:0 10px 34px rgba(255,23,68,.5);display:flex;align-items:center;justify-content:center;animation:cta-pulse 2.2s ease-in-out infinite;position:relative;}
+.vc-play::after{content:'';border-style:solid;border-width:15px 0 15px 24px;border-color:transparent transparent transparent #fff;margin-left:6px;}
+.vc-txt{font-family:'Montserrat',sans-serif;font-size:13px;font-weight:800;color:#fff;text-transform:uppercase;letter-spacing:1px;line-height:1.5;text-shadow:0 2px 10px rgba(0,0,0,.9);}
+.vc-txt b{color:var(--gold)}
+.video-capa:active .vc-play{transform:scale(.94)}
+.mockup-badge{position:absolute;top:10px;right:14px;background:var(--red);color:#000;font-size:9px;font-weight:800;letter-spacing:1.5px;text-transform:uppercase;padding:5px 11px;border-radius:100px;box-shadow:0 4px 20px rgba(255,23,68,.45);z-index:20;}
+.fan-glow{position:relative;width:240px;height:30px;margin:-30px auto 12px;background:radial-gradient(ellipse,rgba(255,23,68,.45) 0%,transparent 70%);filter:blur(12px);animation:fan-glow-p 3.5s ease-in-out infinite;pointer-events:none;z-index:0;}
+@keyframes fan-glow-p{0%,100%{opacity:.5;width:200px}50%{opacity:1;width:260px}}
 .cta-btn{position:relative;z-index:1;display:flex;align-items:center;justify-content:center;gap:10px;background:linear-gradient(135deg,var(--red),var(--redd));color:#fff;font-family:'Montserrat',sans-serif;font-size:clamp(.95rem,3.5vw,1.05rem);font-weight:900;letter-spacing:1.5px;text-transform:uppercase;padding:18px clamp(20px,5vw,36px);border-radius:14px;min-height:52px;box-shadow:0 8px 32px rgba(255,23,68,.4);animation:cta-pulse 2.4s ease-in-out infinite;transition:transform .15s;width:100%;max-width:min(360px,100%);}
 .cta-btn:active{transform:scale(.97)}
 @keyframes cta-pulse{0%,100%{box-shadow:0 8px 32px rgba(255,23,68,.4),0 0 0 0 rgba(255,23,68,.2)}50%{box-shadow:0 8px 42px rgba(255,23,68,.6),0 0 0 14px rgba(255,23,68,0)}}
@@ -160,173 +193,99 @@ section{padding:clamp(44px,8vw,64px) clamp(16px,5vw,20px);position:relative}
 footer{background:var(--bg);padding:clamp(20px,4vw,28px) clamp(16px,4vw,20px) calc(clamp(20px,4vw,28px) + var(--safe-bottom));text-align:center;border-top:1px solid rgba(255,255,255,.04);}
 footer p{font-size:.7rem;color:var(--muted);line-height:1.8;max-width:380px;margin:0 auto}
 .footer-logo{font-family:'Montserrat',sans-serif;font-size:1rem;color:var(--red);margin-bottom:10px;font-weight:800;letter-spacing:2px;text-transform:uppercase}
-html.age-locked,html.age-locked body{overflow:hidden}
-#ageGate{position:fixed;inset:0;z-index:99999;display:flex;align-items:center;justify-content:center;padding:24px;background:#000000;overflow-y:auto;}
-#ageGate .ag-bg{position:absolute;inset:0;background:radial-gradient(ellipse 80% 50% at 50% 0%,rgba(255,23,68,.10) 0%,transparent 65%),#000000;z-index:0;}
-#ageGate .ag-ono{position:absolute;font-family:'Montserrat',sans-serif;font-weight:900;text-transform:uppercase;pointer-events:none;user-select:none;}
-#ageGate .ag-ono-1{font-size:clamp(2rem,9vw,3.4rem);color:rgba(255,214,0,.12);top:8%;left:-2%;transform:rotate(-18deg)}
-#ageGate .ag-ono-2{font-size:clamp(1.6rem,7vw,2.6rem);color:rgba(255,23,68,.11);top:11%;right:-2%;transform:rotate(14deg)}
-#ageGate .ag-ono-3{font-size:clamp(1.5rem,6vw,2.4rem);color:rgba(255,45,85,.10);bottom:9%;left:3%;transform:rotate(-10deg)}
-#ageGate .ag-ono-4{font-size:clamp(2rem,9vw,3.2rem);color:rgba(255,23,68,.10);bottom:6%;right:-2%;transform:rotate(16deg)}
-.ag-card{position:relative;z-index:1;width:100%;max-width:380px;text-align:center;}
-.ag-warn{display:inline-flex;align-items:center;gap:7px;border:1px solid rgba(255,45,85,.5);background:rgba(255,45,85,.08);color:#ff6b85;font-size:.7rem;font-weight:700;letter-spacing:1px;text-transform:uppercase;padding:9px 16px;border-radius:100px;margin-bottom:24px;line-height:1.3;}
-.ag-title{font-family:'Montserrat',sans-serif;font-size:clamp(1.6rem,7vw,2.2rem);font-weight:900;line-height:1.2;margin-bottom:14px;}
-.ag-title span{display:block;color:var(--red)}
-.ag-sub{font-size:clamp(.82rem,3vw,.9rem);color:var(--muted);line-height:1.6;margin-bottom:30px;max-width:300px;margin-left:auto;margin-right:auto;}
-.ag-yes{display:flex;align-items:center;justify-content:center;gap:10px;width:100%;background:linear-gradient(135deg,var(--red),var(--redd));color:#fff;font-family:'Montserrat',sans-serif;font-size:clamp(.9rem,3.4vw,1rem);font-weight:900;letter-spacing:1px;text-transform:uppercase;padding:18px;border-radius:14px;min-height:56px;box-shadow:0 8px 32px rgba(255,23,68,.45);animation:cta-pulse 2.4s ease-in-out infinite;transition:transform .15s;line-height:1.25;}
-.ag-yes:active{transform:scale(.97)}
-.ag-check{display:inline-flex;align-items:center;justify-content:center;width:22px;height:22px;border-radius:6px;background:rgba(0,0,0,.22);font-size:14px;flex-shrink:0}
-.ag-no{display:inline-block;margin-top:18px;font-size:.82rem;color:var(--muted);text-decoration:underline;text-underline-offset:3px;padding:8px;}
+/* ====== PRESSEL (tela de entrada) ====== */
+html.pressel-on,html.pressel-on body{overflow:hidden}
+#pressel{position:fixed;inset:0;z-index:99999;display:flex;align-items:center;justify-content:center;padding:24px;background:#000;overflow-y:auto;}
+#pressel .ps-bg{position:absolute;inset:0;background:radial-gradient(ellipse 80% 50% at 50% 0%,rgba(255,23,68,.12) 0%,transparent 65%),radial-gradient(ellipse 60% 40% at 50% 100%,rgba(255,214,0,.07) 0%,transparent 60%),#000;z-index:0;}
+.ps-card{position:relative;z-index:1;width:100%;max-width:400px;text-align:center;}
+.ps-tag{display:inline-flex;align-items:center;gap:7px;border:1px solid rgba(255,214,0,.45);background:rgba(255,214,0,.07);color:var(--gold);font-size:.7rem;font-weight:700;letter-spacing:1.5px;text-transform:uppercase;padding:9px 16px;border-radius:100px;margin-bottom:22px;}
+.ps-title{font-family:'Montserrat',sans-serif;font-size:clamp(1.6rem,7vw,2.3rem);font-weight:900;line-height:1.15;margin-bottom:16px;}
+.ps-title span{color:var(--red)}
+.ps-sub{font-size:clamp(.85rem,3vw,.95rem);color:var(--muted);line-height:1.65;margin:0 auto 26px;max-width:330px;}
+.ps-lista{display:flex;flex-direction:column;gap:9px;text-align:left;max-width:300px;margin:0 auto 28px;}
+.ps-lista div{display:flex;gap:9px;align-items:flex-start;font-size:.82rem;color:#aaa;line-height:1.45}
+.ps-lista b{color:var(--gold);flex-shrink:0}
+.ps-btn{display:flex;align-items:center;justify-content:center;gap:10px;width:100%;background:linear-gradient(135deg,var(--red),var(--redd));color:#fff;font-family:'Montserrat',sans-serif;font-size:clamp(.9rem,3.4vw,1rem);font-weight:900;letter-spacing:1px;text-transform:uppercase;padding:19px;border-radius:14px;min-height:58px;box-shadow:0 8px 32px rgba(255,23,68,.45);animation:cta-pulse 2.4s ease-in-out infinite;line-height:1.25;}
+.ps-btn:active{transform:scale(.97)}
+.ps-nota{margin-top:16px;font-size:.72rem;color:#555;letter-spacing:.5px}
 .hidden{display:none !important}
-#page-checkout{display:none;min-height:100vh;}
-.co-hero{position:relative;overflow:hidden;}
-.co-banner{width:100%;aspect-ratio:16/10;max-height:300px;object-fit:cover;object-position:center top;display:block;background:var(--bg2);}
-.co-hero-overlay{position:absolute;inset:0;background:linear-gradient(180deg,transparent 30%,rgba(0,0,0,.96) 100%);pointer-events:none;}
-.co-hero-content{position:absolute;bottom:0;left:0;right:0;padding:14px 20px 18px;text-align:center;}
-.co-badge{display:inline-flex;align-items:center;gap:6px;background:rgba(255,23,68,.12);border:1px solid rgba(255,23,68,.35);border-radius:100px;padding:5px 14px;font-size:11px;font-weight:800;color:var(--red);letter-spacing:1px;text-transform:uppercase;margin-bottom:8px;}
-.co-hero-title{font-family:'Montserrat',sans-serif;font-size:clamp(1.1rem,4.5vw,1.5rem);font-weight:900;line-height:1.2;text-shadow:0 2px 12px rgba(0,0,0,.8);}
-.co-hero-title span{color:var(--red);}
-.co-main{max-width:480px;margin:0 auto;padding:20px 16px 60px;}
-.co-product{background:var(--card);border:1px solid rgba(255,23,68,.2);border-radius:16px;padding:16px;display:flex;gap:14px;align-items:center;margin-bottom:18px;position:relative;overflow:hidden;}
-.co-product::before{content:'';position:absolute;top:0;left:0;right:0;height:2px;background:linear-gradient(90deg,var(--red),rgba(255,23,68,.3),var(--red));}
-.co-cover{width:72px;height:100px;border-radius:8px;object-fit:cover;flex-shrink:0;border:2px solid rgba(255,23,68,.3);box-shadow:0 8px 24px rgba(0,0,0,.5);background:var(--bg2);}
-.co-prod-name{font-family:'Montserrat',sans-serif;font-size:14px;font-weight:900;color:var(--red);text-transform:uppercase;letter-spacing:.5px;margin-bottom:4px;}
-.co-prod-desc{font-size:11px;color:var(--muted);line-height:1.5;margin-bottom:8px;}
-.co-prod-price{font-family:'Montserrat',sans-serif;font-size:22px;font-weight:900;color:var(--text);line-height:1;display:flex;align-items:baseline;gap:8px;flex-wrap:wrap;}
-.desc-tag{font-size:10px;font-weight:700;color:var(--red);background:rgba(255,23,68,.1);border:1px solid rgba(255,23,68,.3);padding:2px 8px;border-radius:100px;text-transform:uppercase;letter-spacing:.5px;}
-.co-form-title{font-family:'Montserrat',sans-serif;font-size:13px;font-weight:800;color:var(--text);text-transform:uppercase;letter-spacing:.5px;margin-bottom:12px;text-align:center;}
-.co-form-title span{color:var(--red);}
-.co-group{margin-bottom:11px;}
-.co-group label{display:block;font-size:10px;font-weight:700;color:var(--muted);text-transform:uppercase;letter-spacing:.5px;margin-bottom:4px;}
-.co-group input{width:100%;background:#0a0a0a;border:2px solid rgba(255,255,255,.08);border-radius:10px;padding:13px 14px;font-size:15px;color:var(--text);outline:none;transition:border-color .2s,box-shadow .2s;-webkit-appearance:none;}
-.co-group input::placeholder{color:rgba(255,255,255,.2);}
-.co-group input:focus{border-color:rgba(255,23,68,.5);box-shadow:0 0 0 3px rgba(255,23,68,.1);}
-.bumps-title{font-family:'Montserrat',sans-serif;font-size:12px;font-weight:800;color:var(--text);text-transform:uppercase;letter-spacing:.5px;text-align:center;margin:18px 0 6px;}
-.bump-hint{font-size:11px;color:var(--red);text-align:center;margin-bottom:12px;line-height:1.4;}
-.bump{display:flex;gap:10px;align-items:center;background:var(--bg2);border:2px dashed rgba(255,23,68,.2);border-radius:14px;padding:12px;margin-bottom:10px;cursor:pointer;position:relative;transition:border-color .2s,background .2s;user-select:none;}
-.bump.on{border-style:solid;border-color:var(--red);background:rgba(255,23,68,.05);box-shadow:0 4px 20px rgba(255,23,68,.1);}
-.bump.promo{border-color:rgba(255,214,0,.45);}
-.bump input{-webkit-appearance:none;appearance:none;width:24px;height:24px;border:2px solid rgba(255,255,255,.2);border-radius:7px;flex-shrink:0;cursor:pointer;position:relative;margin:0;background:transparent;transition:all .2s;}
-.bump.on input,.bump input:checked{background:var(--red);border-color:var(--red);}
-.bump input:checked::after{content:'';position:absolute;left:7px;top:3px;width:6px;height:11px;border:solid #fff;border-width:0 2px 2px 0;transform:rotate(45deg);}
-.bump img{width:60px;height:84px;object-fit:cover;object-position:center top;border-radius:8px;flex-shrink:0;border:2px solid rgba(255,23,68,.2);background:var(--bg3);}
-.bump.on img{border-color:rgba(255,23,68,.5);}
-.bump > div{flex:1;}
-.b-name{font-family:'Montserrat',sans-serif;font-size:13px;font-weight:900;color:var(--red);text-transform:uppercase;line-height:1.2;margin-bottom:3px;}
-.b-desc{font-size:11px;color:var(--muted);line-height:1.4;margin-bottom:5px;}
-.b-price{font-size:14px;font-weight:900;color:var(--text);}
-.b-price s{color:var(--muted);font-weight:400;font-size:10px;margin-right:4px;}
-.b-badge{position:absolute;top:-9px;right:14px;background:var(--gold);color:#000;font-size:10px;font-weight:800;padding:2px 9px;border-radius:100px;letter-spacing:.5px;}
-.valor-row{display:flex;justify-content:space-between;align-items:center;background:#0a0a0a;border:1px solid rgba(255,23,68,.15);border-radius:10px;padding:12px 16px;margin:14px 0;}
-.co-total-label{font-size:13px;font-weight:700;color:var(--muted);}
-.co-total-val{font-family:'Montserrat',sans-serif;font-size:20px;font-weight:900;color:var(--red);}
-.co-gatilhos{display:flex;flex-direction:column;gap:6px;background:var(--bg2);border:1px solid rgba(255,255,255,.05);border-radius:12px;padding:12px 14px;margin-bottom:14px;}
-.co-gatilho{display:flex;gap:8px;align-items:flex-start;font-size:11.5px;color:#888;line-height:1.4;}
-.co-gatilho span{flex:1;}
-.co-btn-gerar{width:100%;background:linear-gradient(135deg,var(--red),var(--redd));color:#fff;border:none;border-radius:12px;padding:18px;font-family:'Montserrat',sans-serif;font-size:clamp(13px,4vw,16px);font-weight:900;text-transform:uppercase;letter-spacing:.5px;cursor:pointer;box-shadow:0 8px 32px rgba(255,23,68,.35);animation:cta-pulse 2.2s infinite;position:relative;overflow:hidden;touch-action:manipulation;line-height:1.25;}
-.co-btn-gerar:disabled{opacity:.7;cursor:not-allowed;animation:none;}
-.co-btn-gerar:active{transform:scale(.98);}
-.co-spinner{display:inline-block;width:15px;height:15px;border:2px solid rgba(255,255,255,.3);border-top-color:#fff;border-radius:50%;animation:spin .7s linear infinite;vertical-align:middle;margin-right:7px;}
-@keyframes spin{to{transform:rotate(360deg)}}
-.co-pix-steps{background:var(--bg2);border:1px solid rgba(255,23,68,.1);border-radius:12px;padding:14px;margin-bottom:14px;}
-.co-pix-steps h4{font-family:'Montserrat',sans-serif;font-size:13px;font-weight:800;color:var(--red);text-transform:uppercase;margin-bottom:10px;}
-.co-pix-step{display:flex;gap:10px;align-items:flex-start;margin-bottom:8px;font-size:12px;color:#888;line-height:1.4;}
-.co-step-num{background:var(--red);color:#fff;font-size:10px;font-weight:900;width:20px;height:20px;border-radius:50%;display:flex;align-items:center;justify-content:center;flex-shrink:0;}
-.co-qr-box{text-align:center;margin-bottom:14px;}
-.co-qr-box img{width:min(200px,65vw);height:auto;border:3px solid var(--red);border-radius:12px;padding:6px;background:#fff;display:block;margin:0 auto;}
-.co-qr-label{font-size:11px;font-weight:700;color:var(--muted);margin-top:6px;text-transform:uppercase;letter-spacing:.5px;}
-.co-code-box{background:var(--bg2);border:2px dashed rgba(255,23,68,.25);border-radius:10px;padding:12px;margin-bottom:12px;}
-.co-code-text{font-size:10px;color:#888;word-break:break-all;line-height:1.6;font-family:monospace;}
-.co-btn-copiar{width:100%;background:transparent;color:var(--red);border:2px solid var(--red);border-radius:10px;padding:14px;font-family:'Montserrat',sans-serif;font-size:14px;font-weight:900;cursor:pointer;text-transform:uppercase;letter-spacing:.5px;}
-.co-btn-copiar:active{background:var(--red);color:#fff;}
-.co-pix-urgency{text-align:center;font-size:12px;color:var(--muted);margin-top:12px;}
-.co-pix-urgency strong{color:var(--red);}
-.co-aguardando{display:flex;align-items:center;justify-content:center;gap:8px;font-size:13px;font-weight:700;color:var(--muted);margin-top:14px;}
-.co-pulse-dot{width:10px;height:10px;background:var(--red);border-radius:50%;flex-shrink:0;animation:pdot 1.2s infinite;}
-@keyframes pdot{0%,100%{opacity:1;transform:scale(1)}50%{opacity:.3;transform:scale(.7)}}
-.co-aprovado{text-align:center;padding:18px 0 8px;}
-.co-check-icon{font-size:60px;margin-bottom:10px;}
-.co-aprovado h3{font-family:'Montserrat',sans-serif;font-size:20px;font-weight:900;color:var(--red);text-transform:uppercase;margin-bottom:8px;}
-.co-aprovado p{font-size:13px;color:#888;line-height:1.5;}
-.co-entregavel{margin-top:18px;background:var(--bg2);border:2px solid rgba(255,23,68,.3);border-radius:14px;padding:18px;text-align:center;}
-.co-entregavel .e-icon{font-size:28px;margin-bottom:8px;}
-.co-entregavel .e-title{font-family:'Montserrat',sans-serif;font-size:13px;font-weight:800;color:var(--red);text-transform:uppercase;letter-spacing:.5px;margin-bottom:6px;}
-.co-entregavel .e-sub{font-size:12px;color:var(--muted);margin-bottom:14px;line-height:1.5;}
-.co-entregavel a{display:flex;align-items:center;justify-content:center;gap:8px;background:linear-gradient(135deg,var(--red),var(--redd));color:#fff;font-family:'Montserrat',sans-serif;font-size:15px;font-weight:900;text-transform:uppercase;letter-spacing:.5px;padding:16px;border-radius:10px;text-decoration:none;box-shadow:0 8px 24px rgba(255,23,68,.3);margin-bottom:8px;}
-#accExtra a{background:transparent;color:var(--red);border:2px solid var(--red);box-shadow:none;font-size:13px;}
-.co-entregavel .e-note{font-size:10px;color:#444;margin-top:10px;}
-.co-legal{text-align:center;padding:20px 16px 32px;border-top:1px solid rgba(255,255,255,.04);margin-top:24px;}
-.co-legal p{font-size:10px;color:var(--muted);line-height:1.8;max-width:420px;margin:0 auto;}
-#modalSaida{position:fixed;inset:0;background:rgba(0,0,0,.85);z-index:9998;display:flex;align-items:center;justify-content:center;padding:16px;}
-.co-modal-box{background:#0a0a0a;border:1px solid rgba(255,23,68,.2);border-radius:18px;padding:28px 22px;max-width:380px;width:100%;text-align:center;animation:modal-in .3s ease;}
-@keyframes modal-in{from{transform:scale(.85);opacity:0}to{transform:scale(1);opacity:1}}
-.co-modal-icon{font-size:48px;margin-bottom:10px;}
-.co-modal-box h3{font-family:'Montserrat',sans-serif;font-size:18px;font-weight:900;color:var(--red);text-transform:uppercase;margin-bottom:8px;}
-.co-modal-box p{font-size:13px;color:#888;line-height:1.55;margin-bottom:18px;}
-.co-modal-box p strong{color:var(--red);}
-.co-modal-btns{display:flex;flex-direction:column;gap:10px;}
-.co-btn-stay{background:linear-gradient(135deg,var(--red),var(--redd));color:#fff;border:none;border-radius:10px;padding:15px;font-family:'Montserrat',sans-serif;font-size:14px;font-weight:900;cursor:pointer;text-transform:uppercase;}
-.co-btn-leave{background:none;color:var(--muted);border:none;font-size:12px;cursor:pointer;text-decoration:underline;}
 </style>
 </head>
 <body>
 
-<div id="ageGate" role="dialog" aria-modal="true" aria-label="Verificacao de idade">
-  <div class="ag-bg" aria-hidden="true"></div>
-  <div class="ag-ono ag-ono-1" aria-hidden="true"></div>
-  <div class="ag-ono ag-ono-2" aria-hidden="true"></div>
-  <div class="ag-ono ag-ono-3" aria-hidden="true"></div>
-  <div class="ag-ono ag-ono-4" aria-hidden="true"></div>
-  <div class="ag-card">
-    <span class="ag-warn">&#9888; Conte&uacute;do exclusivo para maiores de 18 anos</span>
-    <h1 class="ag-title">Voc&ecirc; tem <span>18 anos ou mais?</span></h1>
-    <p class="ag-sub">Este conte&uacute;do inclui material adulto +18 e &eacute; exclusivo para maiores de idade. Confirme para continuar.</p>
-    <button class="ag-yes" type="button" onclick="document.getElementById('ageGate').style.display='none';document.documentElement.classList.remove('age-locked');window.scrollTo(0,0);">
-      <span class="ag-check">&#10003;</span> Sim, tenho 18 anos - continuar
+<!-- ====== PRESSEL ======
+     Tela de entrada. O clique aqui e o gesto que libera o audio do
+     video do hero — por isso ela vem antes de tudo. -->
+<div id="pressel" role="dialog" aria-modal="true" aria-label="Entrada">
+  <div class="ps-bg" aria-hidden="true"></div>
+  <div class="ps-card">
+    <span class="ps-tag">Acesso liberado por tempo limitado</span>
+    <h1 class="ps-title">1200 artes em estilo anime<br><span>por menos de R$ 20</span></h1>
+    <p class="ps-sub">Geradas com IA, prontas para baixar e usar. Sem assinatura, sem mensalidade.</p>
+    <div class="ps-lista">
+      <div><b>&#10003;</b> 1200 artes originais em alta resolucao</div>
+      <div><b>&#10003;</b> Organizadas em 6 categorias</div>
+      <div><b>&#10003;</b> Download imediato apos o pagamento</div>
+    </div>
+    <button class="ps-btn" type="button" id="btnPressel"
+      onclick="document.getElementById('pressel').style.display='none';document.documentElement.classList.remove('pressel-on');window.scrollTo(0,0);">
+      VER O PACK COMPLETO
     </button>
-    <a class="ag-no" href="https://www.google.com">N&atilde;o, sou menor de idade</a>
+    <p class="ps-nota">Pagamento unico &middot; Download imediato</p>
   </div>
 </div>
 
 <div class="grain" aria-hidden="true"></div>
 
-<div id="page-vendas">
-<div class="top-bar">Oferta especial - so hoje nesta pagina: <span id="topDate"></span></div>
+<div class="top-bar">1200 artes prontas para usar - entrega imediata</div>
 
+<!-- ============ HERO ============ -->
 <section class="hero">
   <div class="hero-bg"></div>
   <div class="hero-glow"></div>
-  <h1 class="headline">
-    Tenha acesso a <span class="hl-gold">+1200 Doramas PICANTES🔥</span> Todos traduzidos em português.
-  </h1>
 
-  <!-- VIDEO HERO -->
+  <h1 class="headline">
+    <span class="hl-gold">1200 artes</span> em estilo anime, geradas com IA, prontas para usar.
+  </h1>
+  <!-- ============ VIDEO DO HERO ============
+       poster: coloque um frame do proprio video. No iPhone em modo de
+       baixo consumo o autoplay e bloqueado mesmo com muted, e sem poster
+       o cliente ve um retangulo preto no topo da pagina. -->
   <div class="hero-video-wrap">
-    <video autoplay muted loop playsinline>
+    <div class="mockup-badge">EXCLUSIVO</div>
+    <video id="heroVideo" loop playsinline preload="metadata"
+           poster="EDITAR_URL_IMAGEM_POSTER" disablepictureinpicture>
       <source src="https://doram.shop/wp-content/uploads/2026/07/03-LS-M04.mp4" type="video/mp4">
     </video>
+    <!-- Capa de play. O clique do cliente e um gesto explicito, entao o
+         audio nunca e bloqueado pelo navegador. -->
+    <button type="button" class="video-capa" id="btnPlay" aria-label="Assistir ao video com som">
+      <span class="vc-play" aria-hidden="true"></span>
+      <span class="vc-txt">Toque para assistir<br><b>com som</b></span>
+    </button>
+    <button type="button" class="video-som hidden" id="btnSom" aria-label="Ativar ou desativar o som">&#128266;</button>
   </div>
+  <div class="fan-glow" aria-hidden="true"></div>
 
-  <a href="#oferta" class="cta-btn">⚡ QUERO ACESSO AGORA</a>
-  <p class="cta-sub">✅ Acesso imediato · Pagamento único ·Assista offline</p>
-
+  <a href="#oferta" class="cta-btn">VER O PACK COMPLETO</a>
+  <p class="cta-sub">Download imediato · Pagamento único · Alta resolução</p>
   <div class="ticker-x-wrap" aria-hidden="true">
     <div class="ticker-band ticker-band-1">
       <div class="ticker-track">
-        <div class="ticker-item"><span class="t-name">Preço Especial só HOJE</span><span class="t-sep">🔥</span></div>
+        <div class="ticker-item"><span class="t-name">1200 ARTES</span><span class="t-sep">✦</span></div>
         <div class="ticker-item"><span class="t-name">ENTREGA IMEDIATA</span><span class="t-sep">⚡</span></div>
-        <div class="ticker-item"><span class="t-name">1200 Doramas Explicitos</span><span class="t-sep">🔥</span></div>
-        <div class="ticker-item"><span class="t-name">Mais de 4577 VENDAS</span><span class="t-sep">🔥</span></div>
+        <div class="ticker-item"><span class="t-name">ALTA RESOLUCAO</span><span class="t-sep">✦</span></div>
+        <div class="ticker-item"><span class="t-name">1200 ARTES</span><span class="t-sep">✦</span></div>
         <div class="ticker-item"><span class="t-name">ENTREGA IMEDIATA</span><span class="t-sep">⚡</span></div>
-        <div class="ticker-item"><span class="t-name">Aplicativo Discreto no celular</span><span class="t-sep">🔥</span></div>
+        <div class="ticker-item"><span class="t-name">ALTA RESOLUCAO</span><span class="t-sep">✦</span></div>
       </div>
     </div>
     <div class="ticker-band ticker-band-2">
       <div class="ticker-track">
-        <div class="ticker-item"><span class="t-name">SUPORTE INCLUSO</span><span class="t-sep">*</span></div>
+        <div class="ticker-item"><span class="t-name">ARTES ORIGINAIS</span><span class="t-sep">*</span></div>
         <div class="ticker-item"><span class="t-name">GARANTIA 7 DIAS</span><span class="t-sep">*</span></div>
         <div class="ticker-item"><span class="t-name">100% ONLINE</span><span class="t-sep">*</span></div>
-        <div class="ticker-item"><span class="t-name">SUPORTE INCLUSO</span><span class="t-sep">*</span></div>
+        <div class="ticker-item"><span class="t-name">ARTES ORIGINAIS</span><span class="t-sep">*</span></div>
         <div class="ticker-item"><span class="t-name">GARANTIA 7 DIAS</span><span class="t-sep">*</span></div>
         <div class="ticker-item"><span class="t-name">100% ONLINE</span><span class="t-sep">*</span></div>
       </div>
@@ -334,411 +293,318 @@ html.age-locked,html.age-locked body{overflow:hidden}
   </div>
 </section>
 
+<!-- ============ PROVA SOCIAL ============
+     Use apenas numeros que voce consegue comprovar. -->
 <div class="social-proof">
   <div class="sp-inner">
-    <div class="sp-item"><span class="sp-num">⭐⭐⭐⭐⭐4.9</span><span class="sp-label">Avaliação</span></div>
+    <div class="sp-item"><span class="sp-num">1200</span><span class="sp-label">Artes</span></div>
     <div class="sp-divider"></div>
-    <div class="sp-item"><span class="sp-num">12k+</span><span class="sp-label">Assinantes</span></div>
+    <div class="sp-item"><span class="sp-num">EDITAR_RESOLUCAO</span><span class="sp-label">Resolução</span></div>
     <div class="sp-divider"></div>
-    <div class="sp-item"><span class="sp-num">⚡ Acesso Imediato</span><span class="sp-label">Acesso</span></div>
+    <div class="sp-item"><span class="sp-num">Imediato</span><span class="sp-label">Download</span></div>
   </div>
 </div>
 
+<!-- ============ CARROSSEL DE EXEMPLOS ============ -->
 <section class="exemplos-section" id="exemplos">
   <div class="exemplos-header">
-    <p class="section-label">👁️ As Historia Asiaticas mais quentes em um só lugar</p>
-    <h2 class="section-title">Veja alguns <span>exemplos</span></h2>
-    <p>Toque para pausar - toque novamente para continuar</p>
+    <p class="section-label">👁️ acervo</p>
+    <h2 class="section-title">Artes do <span>pack</span></h2>
+    <p>Amostras reais do que voce recebe - toque para pausar</p>
   </div>
-  <div class="carousel-outer" id="carouselOuter">
+  <div class="carousel-outer" id="carouselOuter" role="button" tabindex="0" aria-label="Pausar ou continuar o carrossel">
     <div class="carousel-track" id="carTrack">
-      <div class="car-item"><img src="https://doram.shop/wp-content/uploads/2026/07/images-5.jpg" loading="lazy" decoding="async" width="140" height="210" alt="Exemplo"/></div>
-      <div class="car-item"><img src="https://doram.shop/wp-content/uploads/2026/07/xv_7_p.jpg" loading="lazy" decoding="async" width="140" height="210" alt="Exemplo"/></div>
-      <div class="car-item"><img src="https://doram.shop/wp-content/uploads/2026/07/images-6.jpg" loading="lazy" decoding="async" width="140" height="210" alt="Exemplo"/></div>
-      <div class="car-item"><img src="https://doram.shop/wp-content/uploads/2026/07/xv_2_p.jpg" loading="lazy" decoding="async" width="140" height="210" alt="Exemplo"/></div>
-      <div class="car-item"><img src="https://doram.shop/wp-content/uploads/2026/07/xv_9_p-1.jpg" loading="lazy" decoding="async" width="140" height="210" alt="Exemplo"/></div>
-      <div class="car-item"><img src="https://doram.shop/wp-content/uploads/2026/07/images-7.jpg" loading="lazy" decoding="async" width="140" height="210" alt="Exemplo"/></div>
-      <div class="car-item"><img src="https://doram.shop/wp-content/uploads/2026/07/xv_14_p.jpg" loading="lazy" decoding="async" width="140" height="210" alt="Exemplo"/></div>
-      <div class="car-item"><img src="https://doram.shop/wp-content/uploads/2026/07/images-8.jpg" loading="lazy" decoding="async" width="140" height="210" alt="Exemplo"/></div>
-      <div class="car-item"><img src="https://doram.shop/wp-content/uploads/2026/07/xv_21_p.jpg" loading="lazy" decoding="async" width="140" height="210" alt="Exemplo"/></div>
-      <div class="car-item"><img src="https://doram.shop/wp-content/uploads/2026/07/xv_2_p-1.jpg" loading="lazy" decoding="async" width="140" height="210" alt="Exemplo"/></div>
-      <div class="car-item"><img src="https://doram.shop/wp-content/uploads/2026/07/xv_26_p.jpg" loading="lazy" decoding="async" width="140" height="210" alt="Exemplo"/></div>
-      <div class="car-item"><img src="https://doram.shop/wp-content/uploads/2026/07/xv_29_t.jpg" loading="lazy" decoding="async" width="140" height="210" alt="Exemplo"/></div>
-      <div class="car-item"><img src="https://doram.shop/wp-content/uploads/2026/07/images-1.jpg" loading="lazy" decoding="async" width="140" height="210" alt="Exemplo"/></div>
-      <div class="car-item"><img src="https://doram.shop/wp-content/uploads/2026/07/neverthless-1689775903.jpg" loading="lazy" decoding="async" width="140" height="210" alt="Exemplo"/></div>
-      <div class="car-item"><img src="https://doram.shop/wp-content/uploads/2026/07/images-2.jpg" loading="lazy" decoding="async" width="140" height="210" alt="Exemplo"/></div>
-      <div class="car-item"><img src="https://doram.shop/wp-content/uploads/2026/07/mv5bztqzytq3nzktnzzknc00y2jmltg0nzitode3mzezmwiznwjixkeyxkfqcgdeqxvynzi1nzmxnzm40._v1_sy1000_cr007011000_al_.webp" loading="lazy" decoding="async" width="140" height="210" alt="Exemplo"/></div>
-      <div class="car-item"><img src="https://doram.shop/wp-content/uploads/2026/07/81EhoZxDAqL._AC_UF8941000_QL80_.jpg" loading="lazy" decoding="async" width="140" height="210" alt="Exemplo"/></div>
-      <div class="car-item"><img src="https://doram.shop/wp-content/uploads/2026/07/images-3.jpg" loading="lazy" decoding="async" width="140" height="210" alt="Exemplo"/></div>
-      <div class="car-item"><img src="https://doram.shop/wp-content/uploads/2026/07/images-4.jpg" loading="lazy" decoding="async" width="140" height="210" alt="Exemplo"/></div>
-      <div class="car-item"><img src="https://doram.shop/wp-content/uploads/2026/07/TheSweetSexAndLove2003Poster.jpg" loading="lazy" decoding="async" width="140" height="210" alt="Exemplo"/></div>
+      <!-- EDITAR: substitua cada src pela URL da sua imagem. -->
+      <div class="car-item"><img src="EDITAR_URL_EXEMPLO_01" loading="lazy" decoding="async" width="140" height="210" alt=""/></div>
+      <div class="car-item"><img src="EDITAR_URL_EXEMPLO_02" loading="lazy" decoding="async" width="140" height="210" alt=""/></div>
+      <div class="car-item"><img src="EDITAR_URL_EXEMPLO_03" loading="lazy" decoding="async" width="140" height="210" alt=""/></div>
+      <div class="car-item"><img src="EDITAR_URL_EXEMPLO_04" loading="lazy" decoding="async" width="140" height="210" alt=""/></div>
+      <div class="car-item"><img src="EDITAR_URL_EXEMPLO_05" loading="lazy" decoding="async" width="140" height="210" alt=""/></div>
+      <div class="car-item"><img src="EDITAR_URL_EXEMPLO_06" loading="lazy" decoding="async" width="140" height="210" alt=""/></div>
+      <div class="car-item"><img src="EDITAR_URL_EXEMPLO_07" loading="lazy" decoding="async" width="140" height="210" alt=""/></div>
+      <div class="car-item"><img src="EDITAR_URL_EXEMPLO_08" loading="lazy" decoding="async" width="140" height="210" alt=""/></div>
+      <div class="car-item"><img src="EDITAR_URL_EXEMPLO_09" loading="lazy" decoding="async" width="140" height="210" alt=""/></div>
+      <div class="car-item"><img src="EDITAR_URL_EXEMPLO_10" loading="lazy" decoding="async" width="140" height="210" alt=""/></div>
+      <!-- Duplicado para o loop infinito (a animacao roda ate translateX(-50%)) -->
+      <div class="car-item"><img src="EDITAR_URL_EXEMPLO_01" loading="lazy" decoding="async" width="140" height="210" alt="" aria-hidden="true"/></div>
+      <div class="car-item"><img src="EDITAR_URL_EXEMPLO_02" loading="lazy" decoding="async" width="140" height="210" alt="" aria-hidden="true"/></div>
+      <div class="car-item"><img src="EDITAR_URL_EXEMPLO_03" loading="lazy" decoding="async" width="140" height="210" alt="" aria-hidden="true"/></div>
+      <div class="car-item"><img src="EDITAR_URL_EXEMPLO_04" loading="lazy" decoding="async" width="140" height="210" alt="" aria-hidden="true"/></div>
+      <div class="car-item"><img src="EDITAR_URL_EXEMPLO_05" loading="lazy" decoding="async" width="140" height="210" alt="" aria-hidden="true"/></div>
+      <div class="car-item"><img src="EDITAR_URL_EXEMPLO_06" loading="lazy" decoding="async" width="140" height="210" alt="" aria-hidden="true"/></div>
+      <div class="car-item"><img src="EDITAR_URL_EXEMPLO_07" loading="lazy" decoding="async" width="140" height="210" alt="" aria-hidden="true"/></div>
+      <div class="car-item"><img src="EDITAR_URL_EXEMPLO_08" loading="lazy" decoding="async" width="140" height="210" alt="" aria-hidden="true"/></div>
+      <div class="car-item"><img src="EDITAR_URL_EXEMPLO_09" loading="lazy" decoding="async" width="140" height="210" alt="" aria-hidden="true"/></div>
+      <div class="car-item"><img src="EDITAR_URL_EXEMPLO_10" loading="lazy" decoding="async" width="140" height="210" alt="" aria-hidden="true"/></div>
     </div>
   </div>
   <p class="pause-hint" id="pauseHint"><span>&#9658;</span> toque para pausar</p>
 </section>
 
+<!-- ============ BENEFICIOS ============ -->
 <section class="benefits-section">
   <div class="inner">
-    <p class="section-label">✨ por que vale a pena</p>
-    <h2 class="section-title">Tudo que você<br>recebe ao comprar hoje</h2>
-    <p class="section-sub">Simples, rápido e 100% discreto.</p>
-    <div class="benefit-item"><div class="benefit-icon">📦</div><div class="benefit-text"><h4>inédito</h4><p>Todas as series organizadas e prontas para assiatir. Material original em HD.</p></div></div>
-    <div class="benefit-item"><div class="benefit-icon">⚡</div><div class="benefit-text"><h4>Acesso imediato</h4><p>Pagou, já recebeu. Entrega automática em segundos, sem espera, sem fila.</p></div></div>
-    <div class="benefit-item"><div class="benefit-icon">🔒</div><div class="benefit-text"><h4>Compra 100% discreta</h4><p>Nenhum nome suspeito na fatura. Transação sigilosa do início ao fim.</p></div></div>
-    <div class="benefit-item"><div class="benefit-icon">📲</div><div class="benefit-text"><h4>Funciona em qualquer celular</h4><p>Android ou iPhone — acesse onde e quando quiser, sem restrição alguma.</p></div></div>
-    <div class="benefit-item"><div class="benefit-icon">📶</div><div class="benefit-text"><h4>Veja todo o conteúdo sem precisar de net</h4><p>Baixe uma vez e acesse offline para sempre. Sem internet, sem limitação.</p></div></div>
-    <div class="benefit-item"><div class="benefit-icon">♾️</div><div class="benefit-text"><h4>Acesso vitalício</h4><p>Guarde para sempre. Sem mensalidade, sem renovação, sem prazo de expiração.</p></div></div>
+    <p class="section-label">por que vale a pena</p>
+    <h2 class="section-title">O que voce leva<br>ao comprar hoje</h2>
+    <p class="section-sub">Arquivo unico, download direto, sem assinatura.</p>
+    <div class="benefit-item"><div class="benefit-icon">&#128444;</div><div class="benefit-text"><h4>1200 artes originais</h4><p>Todas geradas com IA e organizadas por tema em pastas separadas.</p></div></div>
+    <div class="benefit-item"><div class="benefit-icon">&#9889;</div><div class="benefit-text"><h4>Download imediato</h4><p>O link aparece na tela assim que o pagamento e confirmado.</p></div></div>
+    <div class="benefit-item"><div class="benefit-icon">&#128200;</div><div class="benefit-text"><h4>Alta resolucao</h4><p>Arquivos EDITAR_RESOLUCAO, prontos para impressao, print on demand ou redes sociais.</p></div></div>
+    <div class="benefit-item"><div class="benefit-icon">&#128193;</div><div class="benefit-text"><h4>Organizado por categoria</h4><p>Voce acha a arte que quer sem abrir 1200 arquivos um por um.</p></div></div>
+    <div class="benefit-item"><div class="benefit-icon">&#128179;</div><div class="benefit-text"><h4>EDITAR_TIPO_DE_LICENCA</h4><p>EDITAR: descreva aqui o que o comprador pode fazer com as artes. Uso pessoal? Comercial? Revenda? Seja especifico — e a duvida numero um de quem compra pack de arte.</p></div></div>
+    <div class="benefit-item"><div class="benefit-icon">&#8734;</div><div class="benefit-text"><h4>Pagamento unico</h4><p>Sem mensalidade e sem renovacao. Baixou, e seu.</p></div></div>
   </div>
 </section>
 
+<!-- ============ O QUE VEM NO PACK ============
+     EDITAR: troque as 6 categorias pelas que existem de verdade no seu
+     pack, e ajuste a quantidade de cada uma. A soma precisa dar 1200. -->
+<section class="acervo-section">
+  <div class="acervo-inner">
+    <p class="section-label" style="text-align:center">o que vem no pack</p>
+    <h2 class="acervo-title">1200 artes divididas<br>em <span>6 categorias</span></h2>
+    <div class="acervo-grid">
+      <div class="acervo-card"><div class="ac-header"><span class="ac-icon">&#9733;</span><span class="ac-name">EDITAR_CATEGORIA_1</span></div><ul class="ac-list"><li>EDITAR_QTD artes</li><li>EDITAR_DESCRICAO</li><li>EDITAR_FORMATO</li></ul></div>
+      <div class="acervo-card"><div class="ac-header"><span class="ac-icon">&#9733;</span><span class="ac-name">EDITAR_CATEGORIA_2</span></div><ul class="ac-list"><li>EDITAR_QTD artes</li><li>EDITAR_DESCRICAO</li><li>EDITAR_FORMATO</li></ul></div>
+      <div class="acervo-card"><div class="ac-header"><span class="ac-icon">&#9733;</span><span class="ac-name">EDITAR_CATEGORIA_3</span></div><ul class="ac-list"><li>EDITAR_QTD artes</li><li>EDITAR_DESCRICAO</li><li>EDITAR_FORMATO</li></ul></div>
+      <div class="acervo-card ac-gold"><div class="ac-header"><span class="ac-icon">&#9733;</span><span class="ac-name">EDITAR_CATEGORIA_4</span></div><ul class="ac-list"><li>EDITAR_QTD artes</li><li>EDITAR_DESCRICAO</li><li>EDITAR_FORMATO</li></ul></div>
+      <div class="acervo-card"><div class="ac-header"><span class="ac-icon">&#9733;</span><span class="ac-name">EDITAR_CATEGORIA_5</span></div><ul class="ac-list"><li>EDITAR_QTD artes</li><li>EDITAR_DESCRICAO</li><li>EDITAR_FORMATO</li></ul></div>
+      <div class="acervo-card"><div class="ac-header"><span class="ac-icon">&#9733;</span><span class="ac-name">EDITAR_CATEGORIA_6</span></div><ul class="ac-list"><li>EDITAR_QTD artes</li><li>EDITAR_DESCRICAO</li><li>EDITAR_FORMATO</li></ul></div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ OFERTA ============ -->
 <section class="offer-section pattern-bg" id="oferta">
   <div class="inner">
     <p class="section-label">⚡ condição especial</p>
-    <h2 class="section-title" style="font-family:'Montserrat',sans-serif;font-weight:900">Garanta agora<br>antes que encerre 🔥</h2>
-    <p class="section-sub">Vagas limitadas a este preço. Pagamento único — acesso vitalício.</p>
+    <h2 class="section-title" style="font-family:'Montserrat',sans-serif;font-weight:900">Leve as 1200 artes<br>por um preco unico</h2>
+    <p class="section-sub">Pagamento unico. Download imediato apos a confirmacao.</p>
     <div class="offer-card">
       <div class="offer-ribbon">Oferta</div>
-      <div class="offer-title">Pacote Completo</div>
-      <div class="offer-sub">Acesso completo aos Doramas mais quente já lançados</div>
+      <div class="offer-title">Pack Completo - 1200 Artes</div>
+      <div class="offer-sub">Artes originais em estilo anime, geradas com IA</div>
       <div class="scarcity-bar"><div class="scarcity-fill"></div></div>
-      <p class="scarcity-txt">🔴 Poucas vagas restantes neste preço</p>
+      <p class="scarcity-txt">EDITAR: so use contagem de vagas se ela for real</p>
       <div class="price-old">De R$ 97,00 por apenas</div>
       <div class="price-new"><span>R$</span>17<span>,00</span></div>
       <div class="price-tag">✅ Você economiza R$ 80,00 hoje</div>
       <div class="what-you-get">
-        <div class="what-item"><span class="check">🦸</span> +1200 Doramas Adultos</div>
-        <div class="what-item"><span class="check">🐱</span> Tudo em Alta Qualidade</div>
-        <div class="what-item"><span class="check">⛩️</span> Todos 100% Traduzidos BR</div>
-        <div class="what-item"><span class="check">📰</span> Assista sem prescizar de WI-FI</div>
-        <div class="what-item"><span class="check">🔥</span> Conteúdo exclusiVO SEM TARJAS</div>
-        <div class="what-item"><span class="check">📖</span> Atualizados Toda Semana</div>
-        <div class="what-item"><span class="check">♾️</span> Acesso vitalício — sem mensalidade</div>
-        <div class="what-item"><span class="check">⚡</span> Entrega imediata após pagamento</div>
+        <div class="what-item"><span class="check">&#10003;</span> 1200 artes em estilo anime</div>
+        <div class="what-item"><span class="check">&#10003;</span> Resolucao EDITAR_RESOLUCAO</div>
+        <div class="what-item"><span class="check">&#10003;</span> Organizadas em 6 categorias</div>
+        <div class="what-item"><span class="check">&#10003;</span> Formato EDITAR_FORMATO (PNG, JPG...)</div>
+        <div class="what-item"><span class="check">&#10003;</span> EDITAR_TIPO_DE_LICENCA</div>
+        <div class="what-item"><span class="check">&#10003;</span> Download imediato apos o pagamento</div>
       </div>
-      <button type="button" class="buy-btn" onclick="irParaCheckout()">QUERO ACESSO AGORA - R$ 17,00</button>
+      <a href="EDITAR_URL_CHECKOUT_EXTERNO" class="buy-btn js-checkout" target="_blank" rel="noopener">QUERO O PACK - R$ 17,00</a>
       <div class="secure-badges">
-        <div class="sec-badge">🔒 Pagamento seguro</div>
-        <div class="sec-badge">⚡ Acesso imediato</div>
-        <div class="sec-badge">📲 Assista offline</div>
+        <div class="sec-badge">Pagamento seguro</div>
+        <div class="sec-badge">Download imediato</div>
+        <div class="sec-badge">Garantia de 7 dias</div>
       </div>
     </div>
   </div>
 </section>
 
+<!-- ============ DEPOIMENTOS ============
+     A secao esta OCULTA (class="hidden") de proposito.
+     Quando tiver depoimentos reais, com permissao de quem escreveu,
+     troque os EDITAR_ e remova o hidden do <section>.
+     Depoimento inventado e propaganda enganosa (CDC art. 37) e e a
+     primeira coisa que se olha quando abre uma disputa. -->
+<section class="depo-section hidden">
+  <div class="depo-inner">
+    <h2 class="depo-title">DEPOIMENTOS</h2>
+    <div class="depo-box">
+      <p class="depo-count">Mostrando 3 depoimentos</p>
+      <div class="depo-comment"><div class="depo-avatar"></div><div class="depo-body"><p class="depo-name">EDITAR_NOME_1</p><p class="depo-text">EDITAR_DEPOIMENTO_1</p><p class="depo-actions">Responder &middot; Curtir</p></div></div>
+      <div class="depo-comment"><div class="depo-avatar"></div><div class="depo-body"><p class="depo-name">EDITAR_NOME_2</p><p class="depo-text">EDITAR_DEPOIMENTO_2</p><p class="depo-actions">Responder &middot; Curtir</p></div></div>
+      <div class="depo-comment"><div class="depo-avatar"></div><div class="depo-body"><p class="depo-name">EDITAR_NOME_3</p><p class="depo-text">EDITAR_DEPOIMENTO_3</p><p class="depo-actions">Responder &middot; Curtir</p></div></div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ FAQ ============ -->
 <section class="faq-section">
   <div class="inner">
-    <p class="section-label">❓ dúvidas frequentes</p>
-    <h2 class="section-title">Perguntas &<br><em style="color:var(--red)">Respostas</em></h2>
-    <p class="section-sub">Tudo o que você precisa saber antes de garantir o seu acesso.</p>
-    <div class="faq-item"><button class="faq-q">Como recebo o acesso após o pagamento?<span class="faq-arrow">▾</span></button><div class="faq-a"><p>O acesso é <strong>100% automático e imediato</strong>. Assim que o pagamento for confirmado, você recebe o link direto no seu e-mail e/ou WhatsApp.</p></div></div>
-    <div class="faq-item"><button class="faq-q">O acervo é grande mesmo?<span class="faq-arrow">▾</span></button><div class="faq-a"><p>Sim. O acervo conta com <strong>milhares de títulos</strong> organizados por categoria.</p></div></div>
-    <div class="faq-item"><button class="faq-q">Precisa de internet para ler?<span class="faq-arrow">▾</span></button><div class="faq-a"><p><strong>Não.</strong> Após baixar os arquivos, você lê completamente offline.</p></div></div>
-    <div class="faq-item"><button class="faq-q">O acesso realmente é vitalício?<span class="faq-arrow">▾</span></button><div class="faq-a"><p>Sim. Você paga <strong>uma única vez</strong> e o acesso é seu para sempre.</p></div></div>
-    <div class="faq-item"><button class="faq-q">Qual a forma de pagamento aceita?<span class="faq-arrow">▾</span></button><div class="faq-a"><p>Aceitamos <strong>PIX</strong>. Ambiente 100% seguro e criptografado. O acesso é liberado em segundos.</p></div></div>
+    <p class="section-label">duvidas frequentes</p>
+    <h2 class="section-title">Perguntas &amp;<br><em style="color:var(--red)">Respostas</em></h2>
+    <p class="section-sub">O que a maioria pergunta antes de comprar.</p>
+    <div class="faq-item"><button class="faq-q" type="button" aria-expanded="false">Como recebo as artes?<span class="faq-arrow" aria-hidden="true">&#9662;</span></button><div class="faq-a"><p>Assim que o pagamento e confirmado, a plataforma libera o download e envia o acesso para o seu e-mail.</p></div></div>
+    <div class="faq-item"><button class="faq-q" type="button" aria-expanded="false">Posso usar as artes comercialmente?<span class="faq-arrow" aria-hidden="true">&#9662;</span></button><div class="faq-a"><p>EDITAR: esta e a pergunta mais importante do seu FAQ. Diga com clareza o que e permitido — uso pessoal, uso comercial, impressao, revenda — e o que nao e. Resposta vaga aqui gera pedido de reembolso depois.</p></div></div>
+    <div class="faq-item"><button class="faq-q" type="button" aria-expanded="false">As artes sao geradas por IA?<span class="faq-arrow" aria-hidden="true">&#9662;</span></button><div class="faq-a"><p><strong>Sim.</strong> Todas as 1200 artes foram criadas com inteligencia artificial em estilo anime. Sao imagens originais, nao reproducoes de obras existentes.</p></div></div>
+    <div class="faq-item"><button class="faq-q" type="button" aria-expanded="false">Qual o formato e o tamanho dos arquivos?<span class="faq-arrow" aria-hidden="true">&#9662;</span></button><div class="faq-a"><p>EDITAR_FORMATO em resolucao EDITAR_RESOLUCAO. O pacote completo tem cerca de EDITAR_TAMANHO.</p></div></div>
+    <div class="faq-item"><button class="faq-q" type="button" aria-expanded="false">Qual a forma de pagamento?<span class="faq-arrow" aria-hidden="true">&#9662;</span></button><div class="faq-a"><p>EDITAR: liste as formas que a sua plataforma aceita (PIX, cartao, boleto). O download libera assim que o pagamento e confirmado.</p></div></div>
+    <div class="faq-item"><button class="faq-q" type="button" aria-expanded="false">E se eu quiser reembolso?<span class="faq-arrow" aria-hidden="true">&#9662;</span></button><div class="faq-a"><p>Voce tem <strong>7 dias</strong> para desistir, conforme o Codigo de Defesa do Consumidor. Basta escrever para <strong>EDITAR_EMAIL_SUPORTE</strong>.</p></div></div>
   </div>
 </section>
 
 <footer>
-  <div class="footer-logo">doramas picantes</div>
+  <div class="footer-logo">EDITAR_MARCA</div>
   <p>
     Este site nao e afiliado, associado nem endossado pela Meta Platforms, Inc., Facebook ou Instagram.<br>
-    Conteudo destinado exclusivamente a maiores de 18 anos.<br>
-    &copy; <span id="footYear"></span> doramas picantes- Todos os direitos reservados - Politica de privacidade
+    Artes originais geradas com inteligencia artificial.<br>
+    Contato: EDITAR_EMAIL_SUPORTE<br>
+    &copy; <span id="footYear"></span> EDITAR_MARCA - Todos os direitos reservados
   </p>
 </footer>
-</div>
-
-<div id="page-checkout">
-  <div class="co-hero">
-    <img class="co-banner" src="https://doram.shop/wp-content/uploads/2026/07/BANNER-01-JOGOS18-1.png" alt="">
-    <div class="co-hero-overlay"></div>
-    <div class="co-hero-content">
-      <div class="co-badge">🔓 Última etapa — acesso garantido</div>
-      <h1 class="co-hero-title">Finalize agora e receba<br><span>seu acesso</span> na hora</h1>
-    </div>
-  </div>
-  <div class="co-main">
-    <div id="sec-venda">
-      <div class="co-product">
-        <img class="co-cover" id="prodImg" src="" alt="" onerror="this.style.opacity=.3">
-        <div>
-          <div class="co-prod-name" id="prodNome">1200 DORAMAS ADULTOS</div>
-          <div class="co-prod-desc">Acesso vitalício ao material</div>
-          <div class="co-prod-old">De R$ 97,00 por</div>
-          <div class="co-prod-price"><span id="prodPreco">R$ 17,00</span> <span class="desc-tag hidden" id="descTag">20% OFF aplicado</span></div>
-        </div>
-      </div>
-      <div class="co-form-title">Preencha para <span>liberar seu acesso</span></div>
-      <div class="co-group"><label>Nome completo</label><input type="text" id="fNome" placeholder="Seu nome" autocomplete="name"></div>
-      <div class="co-group"><label>E-mail</label><input type="email" id="fEmail" placeholder="seuemail@gmail.com" autocomplete="email"></div>
-      <div class="co-group"><label>WhatsApp</label><input type="tel" id="fCel" placeholder="(11) 99999-9999" autocomplete="tel"></div>
-      <div class="co-group"><label>CPF</label><input type="tel" id="fCpf" placeholder="000.000.000-00" autocomplete="off" inputmode="numeric"></div>
-      <div class="bumps-title" id="bumpsTitulo">Adicione mais itens com desconto</div>
-      <p class="bump-hint"></p>
-      <div id="bumpsBox"></div>
-      <div class="valor-row">
-        <span class="co-total-label">Total a pagar:</span>
-        <span class="co-total-val" id="totalVal">R$ 17,00</span>
-      </div>
-      <div class="co-gatilhos">
-        <div class="co-gatilho">&#128274; <span>Compra 100% segura e criptografada</span></div>
-        <div class="co-gatilho">&#9889; <span>Acesso liberado em segundos apos o pagamento</span></div>
-        <div class="co-gatilho">&#9851; <span>Vitalicio - pague uma vez, acesse para sempre</span></div>
-      </div>
-      <button type="button" class="co-btn-gerar" id="btnGerar">GERAR PIX E GARANTIR ACESSO - R$ 17,00</button>
-    </div>
-
-    <div id="sec-pix" class="hidden">
-      <div class="co-pix-steps">
-        <h4>Como pagar:</h4>
-        <div class="co-pix-step"><span class="co-step-num">1</span><span>Abra o app do seu banco</span></div>
-        <div class="co-pix-step"><span class="co-step-num">2</span><span>Escolha PIX -> Copia e Cola (ou escaneie o QR)</span></div>
-        <div class="co-pix-step"><span class="co-step-num">3</span><span>Cole o codigo ou aponte a camera para o QR</span></div>
-        <div class="co-pix-step"><span class="co-step-num">4</span><span>Confirme - seu acesso libera automaticamente</span></div>
-      </div>
-      <div class="co-qr-box">
-        <img id="qrImg" src="" alt="QR Code PIX">
-        <p class="co-qr-label">Escaneie o QR Code</p>
-      </div>
-      <div class="co-code-box"><div class="co-code-text" id="copiaTxt"></div></div>
-      <button type="button" class="co-btn-copiar" id="btnCopiar">COPIAR CODIGO PIX</button>
-      <div class="co-pix-urgency" id="pixUrgency">Este PIX expira em <strong id="pixTimer">15:00</strong></div>
-      <div class="co-aguardando"><span class="co-pulse-dot"></span><span id="statusTxt">Aguardando pagamento...</span></div>
-    </div>
-
-    <div id="sec-obrigado" class="hidden">
-      <div class="co-aprovado">
-        <div class="co-check-icon">&#9989;</div>
-        <h3>Pagamento Aprovado!</h3>
-        <p>Seu acesso foi liberado. Confira seu e-mail e WhatsApp.</p>
-      </div>
-      <div class="co-entregavel">
-        <div class="e-icon">&#127873;</div>
-        <div class="e-title">Seu acesso esta pronto!</div>
-        <div class="e-sub">Clique abaixo para acessar seu conteudo agora</div>
-        <a id="accPrincipal" href="#" target="_blank" rel="noopener">ACESSAR MEU CONTEUDO AGORA</a>
-        <div id="accExtra"></div>
-        <div class="e-note">Guarde este link - ele e seu</div>
-      </div>
-    </div>
-
-    <div class="co-legal">
-      <p>Este site nao e afiliado a Meta Platforms, Inc. - Conteudo destinado a maiores de 18 anos.</p>
-    </div>
-  </div>
-</div>
-
-<div id="modalSaida" class="hidden">
-  <div class="co-modal-box">
-    <div class="co-modal-icon">&#9888;</div>
-    <h3>Espere! Tem um desconto pra voce</h3>
-    <p>Aplique <strong>20% OFF</strong> agora e finalize seu acesso com preco menor.</p>
-    <div class="co-modal-btns">
-      <button type="button" class="co-btn-stay" id="btnAplicarDesc">APLICAR 20% DE DESCONTO</button>
-      <button type="button" class="co-btn-leave" id="btnPularDesc">Nao quero o desconto</button>
-    </div>
-  </div>
-</div>
 
 <script>
-document.getElementById('topDate').textContent=new Date().toLocaleDateString('pt-BR',{day:'2-digit',month:'2-digit',year:'numeric'});
-document.getElementById('footYear').textContent=new Date().getFullYear();
+/* ===================================================================
+   Pagina estatica. Nao existe servidor, nao existe API, nao existe
+   checkout aqui. O botao de compra manda o lead para a plataforma
+   externa, e e la que o pagamento acontece.
+   =================================================================== */
 
-function initCarousel(){
-  var outer=document.getElementById('carouselOuter'),track=document.getElementById('carTrack'),hint=document.getElementById('pauseHint');
-  if(!outer||!track)return;
-  var paused=false;
-  outer.addEventListener('click',function(){paused=!paused;track.style.animationPlayState=paused?'paused':'running';hint.innerHTML=paused?'<span>&#10073;&#10073;</span> pausado - toque para continuar':'<span>&#9658;</span> toque para pausar';hint.classList.toggle('is-paused',paused);});
-  document.addEventListener('visibilitychange',function(){if(document.hidden){track.style.animationPlayState='paused';}else if(!paused){track.style.animationPlayState='running';}});
-  if('IntersectionObserver' in window){var io=new IntersectionObserver(function(entries){entries.forEach(function(e){if(!paused)track.style.animationPlayState=e.isIntersecting?'running':'paused';});},{threshold:0.1});io.observe(outer);}
+document.getElementById('footYear').textContent = new Date().getFullYear();
+
+/* Cada init roda isolado: se um quebrar, os outros continuam. */
+function seguro(nome, fn){
+  try{ fn(); }catch(e){ console.error('falhou em '+nome+':', e); }
 }
 
+/* ---------- pressel (tela de entrada) ---------- */
+function initPressel(){
+  var p=document.getElementById('pressel');
+  if(!p) return;
+  /* forca visivel: cobre o caso da aba voltar do cache do navegador */
+  p.style.display='flex';
+  document.documentElement.classList.add('pressel-on');
+  var b=document.getElementById('btnPressel');
+  if(b) b.addEventListener('click',function(){
+    p.style.display='none';
+    document.documentElement.classList.remove('pressel-on');
+    window.scrollTo(0,0);
+    try{ if(window.fbq) fbq('track','ViewContent',{content_name:'entrou_na_pagina'}); }catch(e){}
+  });
+}
+
+/* ---------- video do hero ---------- */
+function initVideo(){
+  var v=document.getElementById('heroVideo');
+  var capa=document.getElementById('btnPlay');
+  var som=document.getElementById('btnSom');
+  if(!v||!capa||!som) return;
+
+  function atualizarSom(){
+    som.innerHTML = v.muted ? '&#128263;' : '&#128266;';
+    som.classList.toggle('mudo', v.muted);
+  }
+
+  capa.addEventListener('click',function(){
+    v.muted=false; v.volume=1;
+    v.play().catch(function(){
+      /* Recusa rara com gesto explicito. Roda mudo em vez de deixar o
+         cliente olhando uma imagem parada. */
+      v.muted=true; v.play().catch(function(){});
+      atualizarSom();
+    });
+    capa.classList.add('saindo');
+    som.classList.remove('hidden');
+    atualizarSom();
+    try{ if(window.fbq) fbq('track','ViewContent',{content_name:'video_play'}); }catch(e){}
+  });
+
+  som.addEventListener('click',function(){
+    v.muted=!v.muted;
+    if(!v.muted){ v.volume=1; v.play().catch(function(){}); }
+    atualizarSom();
+  });
+
+  /* Fora da tela, pausa. Audio tocando enquanto o lead le a oferta
+     la embaixo compete com a propria oferta. */
+  if('IntersectionObserver' in window){
+    var io=new IntersectionObserver(function(ents){
+      ents.forEach(function(e){ if(!e.isIntersecting && !v.paused) v.pause(); });
+    },{threshold:0.35});
+    io.observe(v);
+  }
+
+  atualizarSom();
+}
+
+/* ---------- carrossel ---------- */
+function initCarousel(){
+  var outer=document.getElementById('carouselOuter');
+  var track=document.getElementById('carTrack');
+  var hint=document.getElementById('pauseHint');
+  if(!outer||!track) return;
+  var paused=false;
+  function alternar(){
+    paused=!paused;
+    track.style.animationPlayState=paused?'paused':'running';
+    hint.innerHTML=paused?'<span>&#10073;&#10073;</span> pausado - toque para continuar':'<span>&#9658;</span> toque para pausar';
+    hint.classList.toggle('is-paused',paused);
+  }
+  outer.addEventListener('click',alternar);
+  outer.addEventListener('keydown',function(e){ if(e.key==='Enter'||e.key===' '){ e.preventDefault(); alternar(); } });
+  document.addEventListener('visibilitychange',function(){
+    if(document.hidden){ track.style.animationPlayState='paused'; }
+    else if(!paused){ track.style.animationPlayState='running'; }
+  });
+  if('IntersectionObserver' in window){
+    var io=new IntersectionObserver(function(entries){
+      entries.forEach(function(e){ if(!paused) track.style.animationPlayState=e.isIntersecting?'running':'paused'; });
+    },{threshold:0.1});
+    io.observe(outer);
+  }
+}
+
+/* ---------- FAQ ---------- */
 function initFaq(){
   document.querySelectorAll('.faq-q').forEach(function(btn){
-    btn.addEventListener('click',function(){var item=btn.closest('.faq-item'),isOpen=item.classList.contains('open');document.querySelectorAll('.faq-item').forEach(function(i){i.classList.remove('open');});if(!isOpen)item.classList.add('open');});
+    btn.addEventListener('click',function(){
+      var item=btn.closest('.faq-item');
+      var abrir=!item.classList.contains('open');
+      document.querySelectorAll('.faq-item').forEach(function(i){
+        i.classList.remove('open');
+        var q=i.querySelector('.faq-q'); if(q) q.setAttribute('aria-expanded','false');
+      });
+      if(abrir){ item.classList.add('open'); btn.setAttribute('aria-expanded','true'); }
+    });
   });
 }
 
+/* ---------- rolagem suave ---------- */
 function initAnchors(){
   document.querySelectorAll('a[href^="#"]').forEach(function(a){
-    a.addEventListener('click',function(e){var href=a.getAttribute('href');if(href.length<2)return;var t=document.querySelector(href);if(t){e.preventDefault();t.scrollIntoView({behavior:'smooth',block:'start'});}});
+    a.addEventListener('click',function(e){
+      var href=a.getAttribute('href');
+      if(href.length<2) return;
+      var t=document.querySelector(href);
+      if(t){ e.preventDefault(); t.scrollIntoView({behavior:'smooth',block:'start'}); }
+    });
   });
 }
 
-var CFG={
-  PIXEL_ID:"1589106396227229",MOEDA:"BRL",ITEM_LABEL:"itens",
-  PRODUTO:{nome:"1200 DORAMAS ADULTOS",preco:17.00,capa:"https://doram.shop/wp-content/uploads/2026/07/maxresdefault.jpg"},
-  DESCONTO_PCT:20,
-  ACESSOS:{principal:"https://www.xvideos.com/video.udetpeo9d9a/minha_chefe_divide_o_quarto_comigo_em_uma_viagem_de_negocios_legendado_fuji_kanna",bump1:"EDITAR_URL_ACESSO_BUMP1",bump2:"EDITAR_URL_ACESSO_BUMP2"},
-  BUMP_BASE:7.90,BUMP_TIERS:[7.90,6.90],
-  BUMPS:[
-    {id:"bump1",nome:"70 MIL HENTAIS E HQS +18",desc:"CONTEUDO SEM FRESCURA TUDO PRONTO PARA ACESSAR SEM CENSURA",img:"https://doram.shop/wp-content/uploads/2026/06/2923ea10-7711-4486-b5a8-46f63390765b.jpg"},
-    {id:"bump2",nome:"1200 REVISTAS +18 ANTIGAS",desc:"REVISTAS BRASILEIRAS E GRINGAS SÓ RARIDADE",img:"https://doram.shop/wp-content/uploads/2026/07/18328594.jpg"}
-  ]
-};
-
-var state={descontoAtivo:false,bumps:{},icDisparado:false,modalMostrado:false,paymentId:null,valorCobrado:null,pollTimer:null,expiraTimer:null,backTrap:false};
-function $(id){return document.getElementById(id);}
-function brl(v){return "R$ "+v.toFixed(2).replace(".",",");}
-function novoEventId(){return "ev_"+Date.now()+"_"+Math.random().toString(36).slice(2,10);}
-function getCookie(name){var m=document.cookie.match(new RegExp("(^| )"+name+"=([^;]+)"));return m?m[2]:"";}
-
-function track(eventName,custom){
-  var eid=novoEventId();
-  try{if(window.fbq){fbq("track",eventName,custom||{},{eventID:eid});}}catch(e){}
-  var payload={event_name:eventName,event_id:eid,event_source_url:location.href,fbp:getCookie("_fbp"),fbc:getCookie("_fbc"),custom_data:custom||{},user:{email:($("fEmail")?$("fEmail").value.trim():""),phone:($("fCel")?$("fCel").value.replace(/\D/g,""):""),nome:($("fNome")?$("fNome").value.trim():"")}};
-  try{fetch("/api/meta-event",{method:"POST",headers:{"Content-Type":"application/json"},body:JSON.stringify(payload)}).catch(function(){});}catch(e){}
-  return eid;
-}
-
-function round2(v){return Math.round(v*100)/100;}
-function precoBase(){var p=CFG.PRODUTO.preco;if(state.descontoAtivo){p=p*(1-CFG.DESCONTO_PCT/100);}return round2(p);}
-function bumpUnit(qtd){if(qtd<=0)return CFG.BUMP_TIERS[0];var idx=Math.min(qtd,CFG.BUMP_TIERS.length)-1;return CFG.BUMP_TIERS[idx];}
-function bumpsSelecionados(){return CFG.BUMPS.filter(function(b){return state.bumps[b.id];}).map(function(b){return b.id;});}
-function precoBumps(){var q=bumpsSelecionados().length;if(q===0)return 0;return round2(bumpUnit(q)*q);}
-function totalAtual(){return round2(precoBase()+precoBumps());}
-function economiaBumps(){var q=bumpsSelecionados().length;if(q===0)return 0;return round2(CFG.BUMP_BASE*q-bumpUnit(q)*q);}
-
-function atualizarTotal(){
-  refreshBumps();
-  $("totalVal").textContent=brl(totalAtual());
-  $("prodPreco").textContent=brl(precoBase());
-  if($("descTag"))$("descTag").classList.toggle("hidden",!state.descontoAtivo);
-  var btn=$("btnGerar");if(btn&&!btn.disabled)btn.textContent="GERAR PIX E GARANTIR ACESSO - "+brl(totalAtual());
-  refreshHint();
-}
-function refreshHint(){
-  var hint=document.querySelector(".bump-hint");if(!hint)return;
-  var q=bumpsSelecionados().length,eco=economiaBumps(),total=CFG.BUMPS.length;
-  if(q===0){hint.textContent="Quanto mais "+CFG.ITEM_LABEL+" voce leva, mais desconto recebe hoje.";}
-  else if(q>=total&&eco>0){hint.textContent="Desconto maximo destravado: voce economizou "+brl(eco)+" hoje!";}
-  else if(eco>0){hint.textContent="Voce ja esta economizando "+brl(eco)+" hoje - adicione mais e aumente!";}
-  else{hint.textContent="Adicione mais 1 e comece a destravar seu desconto.";}
-}
-
-var bumpRows={};
-function renderBumps(){
-  var box=$("bumpsBox");box.innerHTML="";bumpRows={};
-  CFG.BUMPS.forEach(function(b){
-    var row=document.createElement("label");row.className="bump";row.setAttribute("data-id",b.id);
-    row.innerHTML='<span class="b-badge hidden"></span><input type="checkbox" /><img src="'+b.img+'" alt="" onerror="this.style.opacity=.3" loading="lazy"/><div><div class="b-name">'+b.nome+'</div><div class="b-desc">'+b.desc+'</div><div class="b-price"></div></div>';
-    var chk=row.querySelector("input");chk.addEventListener("change",function(){state.bumps[b.id]=chk.checked;atualizarTotal();});
-    bumpRows[b.id]={row:row,priceEl:row.querySelector(".b-price"),badgeEl:row.querySelector(".b-badge")};
-    box.appendChild(row);
-  });
-  refreshBumps();
-}
-function refreshBumps(){
-  var qtd=bumpsSelecionados().length,base=CFG.BUMP_BASE,unit=qtd>0?bumpUnit(qtd):base;
-  var off=base>unit?Math.round((1-unit/base)*100):0;
-  CFG.BUMPS.forEach(function(b){
-    var ref=bumpRows[b.id];if(!ref)return;
-    var marcado=!!state.bumps[b.id];
-    ref.row.classList.toggle("on",marcado);ref.row.classList.toggle("promo",off>0&&!marcado);
-    if(off>0){ref.priceEl.innerHTML='<s>'+brl(base)+'</s>'+brl(unit);ref.badgeEl.textContent="-"+off+"%";ref.badgeEl.classList.remove("hidden");}
-    else{ref.priceEl.innerHTML=brl(unit);ref.badgeEl.classList.add("hidden");}
+/* ---------- saida para o checkout externo ----------
+   InitiateCheckout dispara no clique, antes de trocar de dominio.
+   Depois daqui o rastreio e responsabilidade da plataforma: se ela
+   permitir instalar o seu Pixel na pagina de obrigado, e la que o
+   Purchase precisa ser configurado. Sem isso voce ve o clique e nao
+   ve a venda. */
+function initCTA(){
+  document.querySelectorAll('.js-checkout').forEach(function(a){
+    a.addEventListener('click',function(){
+      try{
+        if(window.fbq) fbq('track','InitiateCheckout',{
+          content_name:'pack_1200_artes', value:17.00, currency:'BRL'
+        });
+      }catch(e){}
+    });
   });
 }
 
-function mascaraCel(v){v=v.replace(/\D/g,"").slice(0,11);if(v.length<=2)return v.length?"("+v:v;if(v.length<=7)return "("+v.slice(0,2)+") "+v.slice(2);return "("+v.slice(0,2)+") "+v.slice(2,7)+"-"+v.slice(7);}
-function mascaraCpf(v){v=v.replace(/\D/g,"").slice(0,11);if(v.length<=3)return v;if(v.length<=6)return v.slice(0,3)+"."+v.slice(3);if(v.length<=9)return v.slice(0,3)+"."+v.slice(3,6)+"."+v.slice(6);return v.slice(0,3)+"."+v.slice(3,6)+"."+v.slice(6,9)+"-"+v.slice(9);}
-function cpfValido(v){var d=String(v).replace(/\D/g,"");if(d.length!==11)return false;if(/^(\d)\1{10}$/.test(d))return false;var soma=0,i;for(i=0;i<9;i++)soma+=parseInt(d[i],10)*(10-i);var r1=(soma*10)%11;if(r1===10)r1=0;if(r1!==parseInt(d[9],10))return false;soma=0;for(i=0;i<10;i++)soma+=parseInt(d[i],10)*(11-i);var r2=(soma*10)%11;if(r2===10)r2=0;if(r2!==parseInt(d[10],10))return false;return true;}
+seguro('pressel', initPressel);
+seguro('video', initVideo);
+seguro('cta', initCTA);
 
-function irParaCheckout(){
-  if($("page-vendas"))$("page-vendas").style.display="none";
-  $("page-checkout").style.display="block";
-  window.scrollTo(0,0);
-  if(!state.backTrap){state.backTrap=true;try{history.pushState(null,"",location.href);window.addEventListener("popstate",function(){if($("page-checkout").style.display==="block"&&!$("sec-venda").classList.contains("hidden")&&!state.modalMostrado){abrirModalSaida();history.pushState(null,"",location.href);}});}catch(e){}}
-}
-
-function abrirModalSaida(){
-  if(state.modalMostrado)return;if($("page-checkout").style.display!=="block")return;if($("sec-venda").classList.contains("hidden"))return;
-  state.modalMostrado=true;$("modalSaida").classList.remove("hidden");
-}
-function setupExitIntent(){
-  document.addEventListener("mouseout",function(e){if(!e.relatedTarget&&e.clientY<=0)abrirModalSaida();});
-  if($("btnAplicarDesc"))$("btnAplicarDesc").addEventListener("click",function(){state.descontoAtivo=true;atualizarTotal();$("modalSaida").classList.add("hidden");track("ViewContent",{content_name:"cupom_20_aplicado"});var alvo=document.querySelector(".valor-row");if(alvo)alvo.scrollIntoView({behavior:"smooth",block:"center"});});
-  if($("btnPularDesc"))$("btnPularDesc").addEventListener("click",function(){$("modalSaida").classList.add("hidden");});
-}
-
-function setupCheckout(){
-  var nome=$("fNome"),cel=$("fCel"),email=$("fEmail"),cpf=$("fCpf"),btn=$("btnGerar");
-  cel.addEventListener("input",function(){cel.value=mascaraCel(cel.value);});
-  cpf.addEventListener("input",function(){cpf.value=mascaraCpf(cpf.value);});
-  nome.addEventListener("input",function(){if(!state.icDisparado&&nome.value.trim().length>=2){state.icDisparado=true;track("InitiateCheckout",{value:totalAtual(),currency:CFG.MOEDA});}});
-  btn.addEventListener("click",gerarPix);
-
-  function valido(){
-    if(nome.value.trim().length<3){alert("Digite seu nome completo.");nome.focus();return false;}
-    var dig=cel.value.replace(/\D/g,"");if(dig.length<10){alert("Digite um WhatsApp valido com DDD.");cel.focus();return false;}
-    if(!/^[^@\s]+@[^@\s]+\.[^@\s]+$/.test(email.value.trim())){alert("Digite um e-mail valido.");email.focus();return false;}
-    if(!cpfValido(cpf.value)){alert("Digite um CPF valido.");cpf.focus();return false;}
-    return true;
-  }
-  function gerarPix(){
-    if(!valido())return;
-    btn.disabled=true;btn.innerHTML='<span class="co-spinner"></span> GERANDO PIX...';
-    var body={nome:nome.value.trim(),email:email.value.trim(),celular:cel.value.replace(/\D/g,""),cpf:cpf.value.replace(/\D/g,""),desconto:state.descontoAtivo,bumps:bumpsSelecionados()};
-    fetch("/api/criar-pix",{method:"POST",headers:{"Content-Type":"application/json"},body:JSON.stringify(body)})
-    .then(function(r){return r.json();})
-    .then(function(data){
-      if(!data||!data.qr_code){throw new Error(data&&data.error?data.error:"Falha ao gerar PIX");}
-      state.paymentId=data.payment_id;state.valorCobrado=(typeof data.valor==="number")?data.valor:totalAtual();
-      track("AddPaymentInfo",{value:state.valorCobrado,currency:CFG.MOEDA});mostrarPix(data);
-    })
-    .catch(function(err){console.log("gerarPix error",err);alert("Nao foi possivel gerar o PIX agora. Tente novamente.");btn.disabled=false;atualizarTotal();});
-  }
-  function mostrarPix(data){
-    $("sec-venda").classList.add("hidden");$("sec-pix").classList.remove("hidden");window.scrollTo(0,0);
-    if(data.qr_code_base64){$("qrImg").src="data:image/png;base64,"+data.qr_code_base64;}
-    $("copiaTxt").textContent=data.qr_code;iniciarTimer(15*60);iniciarPolling();
-  }
-  $("btnCopiar").addEventListener("click",function(){
-    var txt=$("copiaTxt").textContent||"";
-    function ok(){$("btnCopiar").textContent="CODIGO COPIADO!";setTimeout(function(){$("btnCopiar").textContent="COPIAR CODIGO PIX";},2000);}
-    if(navigator.clipboard&&navigator.clipboard.writeText){navigator.clipboard.writeText(txt).then(ok).catch(function(){legacyCopy(txt);ok();});}else{legacyCopy(txt);ok();}
-  });
-  function legacyCopy(txt){var ta=document.createElement("textarea");ta.value=txt;document.body.appendChild(ta);ta.select();try{document.execCommand("copy");}catch(e){}document.body.removeChild(ta);}
-}
-
-function iniciarTimer(segundos){
-  var t=segundos;
-  function tick(){var m=Math.floor(t/60),s=t%60;if($("pixTimer"))$("pixTimer").textContent=(m<10?"0":"")+m+":"+(s<10?"0":"")+s;if(t<=0){clearInterval(state.expiraTimer);if($("pixUrgency"))$("pixUrgency").textContent="Tempo esgotado - gere um novo PIX se precisar.";return;}t--;}
-  tick();state.expiraTimer=setInterval(tick,1000);
-}
-
-function iniciarPolling(){
-  if(!state.paymentId)return;
-  state.pollTimer=setInterval(function(){
-    fetch("/api/status-pix?id="+encodeURIComponent(state.paymentId))
-    .then(function(r){return r.json();})
-    .then(function(d){
-      if(d&&d.status==="approved"){clearInterval(state.pollTimer);clearInterval(state.expiraTimer);aprovado();}
-      else if(d&&(d.status==="rejected"||d.status==="cancelled")){clearInterval(state.pollTimer);if($("statusTxt"))$("statusTxt").textContent="Pagamento nao concluido. Gere um novo PIX.";}
-    })
-    .catch(function(e){console.log("status error",e);});
-  },4000);
-}
-
-function aprovado(){
-  try{localStorage.removeItem('pix_payment_id');localStorage.removeItem('pix_valor');}catch(e){}
-  var valor=(typeof state.valorCobrado==="number")?state.valorCobrado:totalAtual();
-  track("Purchase",{value:valor,currency:CFG.MOEDA});
-  $("sec-pix").classList.add("hidden");$("sec-obrigado").classList.remove("hidden");window.scrollTo(0,0);
-  if($("accPrincipal"))$("accPrincipal").href=CFG.ACESSOS.principal;
-  var extra=$("accExtra");
-  if(extra){extra.innerHTML="";CFG.BUMPS.forEach(function(b){if(state.bumps[b.id]){var a=document.createElement("a");a.href=CFG.ACESSOS[b.id]||"#";a.target="_blank";a.rel="noopener";a.textContent="Acessar: "+b.nome;extra.appendChild(a);}});}
-}
-
-(function initCheckout(){
-  if(!$("bumpsBox"))return;
-  $("prodNome").textContent=CFG.PRODUTO.nome;$("prodImg").src=CFG.PRODUTO.capa;
-  var tb=$("bumpsTitulo");if(tb)tb.textContent="Adicione mais "+CFG.ITEM_LABEL+" com desconto";
-  renderBumps();atualizarTotal();setupCheckout();setupExitIntent();
-  track("ViewContent",{content_name:CFG.PRODUTO.nome,value:CFG.PRODUTO.preco,currency:CFG.MOEDA});
-})();
-
-window.addEventListener('load',function(){setTimeout(function(){initCarousel();initFaq();initAnchors();},100);});
+window.addEventListener('load',function(){
+  seguro('carrossel', initCarousel);
+  seguro('faq', initFaq);
+  seguro('ancoras', initAnchors);
+});
 </script>
 </body>
 </html>
