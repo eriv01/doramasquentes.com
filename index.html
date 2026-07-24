@@ -214,22 +214,24 @@ html.pressel-on,html.pressel-on body{overflow:hidden}
 <body>
 
 <!-- ====== PRESSEL ======
-     Tela de entrada. O clique aqui e o gesto que libera o audio do
-     video do hero — por isso ela vem antes de tudo. -->
+     Tela de entrada. O clique aqui e o primeiro gesto do usuario na
+     pagina, o que tambem libera o audio do video mais abaixo. -->
 <div id="pressel" role="dialog" aria-modal="true" aria-label="Entrada">
   <div class="ps-bg" aria-hidden="true"></div>
   <div class="ps-card">
-    <span class="ps-tag">Acesso liberado por tempo limitado</span>
-    <h1 class="ps-title">1200 artes em estilo anime<br><span>por menos de R$ 20</span></h1>
-    <p class="ps-sub">Geradas com IA, prontas para baixar e usar. Sem assinatura, sem mensalidade.</p>
+    <span class="ps-tag">
+⚠ Conteúdo exclusivo para maiores de 18 anos</span>
+    <h1 class="ps-title">Você tem<br><span>18 anos ou mais?</span></h1>
+    <p class="ps-sub">Este conteúdo inclui material adulto +18 e é exclusivo para maiores de idade. Confirme para continuar.</p>
     <div class="ps-lista">
-      <div><b>&#10003;</b> 1200 artes originais em alta resolucao</div>
-      <div><b>&#10003;</b> Organizadas em 6 categorias</div>
-      <div><b>&#10003;</b> Download imediato apos o pagamento</div>
+      <div><b>&#10003;</b></div>
+      <div><b>&#10003;</b></div>
+      <div><b>&#10003;</b></div>
     </div>
     <button class="ps-btn" type="button" id="btnPressel"
       onclick="document.getElementById('pressel').style.display='none';document.documentElement.classList.remove('pressel-on');window.scrollTo(0,0);">
-      VER O PACK COMPLETO
+      ✓
+Sim, tenho 18 anos - continuar
     </button>
     <p class="ps-nota">Pagamento unico &middot; Download imediato</p>
   </div>
@@ -459,16 +461,53 @@ html.pressel-on,html.pressel-on body{overflow:hidden}
 
 document.getElementById('footYear').textContent = new Date().getFullYear();
 
+/* ---------- comeca sempre do topo ----------
+   Dois motivos para a pagina "descer sozinha":
+
+   1. O navegador restaura a posicao de rolagem ao recarregar. Como o
+      CSS tem scroll-behavior:smooth, essa volta vira uma descida
+      animada e parece bug.
+   2. Se o lead clicou no CTA do hero antes, a URL fica com #oferta —
+      e o navegador pula direto pra la em toda visita seguinte.
+
+   Isto resolve os dois. Roda antes de qualquer outra coisa. */
+(function comecarDoTopo(){
+  try{ if('scrollRestoration' in history) history.scrollRestoration='manual'; }catch(e){}
+  if(location.hash){
+    try{ history.replaceState(null,'',location.pathname+location.search); }catch(e){}
+  }
+  var html=document.documentElement, suave=html.style.scrollBehavior;
+  html.style.scrollBehavior='auto';        /* sobe seco, sem animacao */
+  window.scrollTo(0,0);
+  window.addEventListener('load',function(){
+    window.scrollTo(0,0);
+    setTimeout(function(){ html.style.scrollBehavior=suave||''; },80);
+  });
+})();
+
+/* O navegador guarda onde o lead parou e restaura ao recarregar ou ao
+   voltar. Com scroll-behavior:smooth isso vira uma descida animada e
+   parece que a pagina desceu sozinha ate a oferta. Aqui a gente assume
+   o controle: toda visita comeca no topo. */
+if('scrollRestoration' in history){ history.scrollRestoration='manual'; }
+window.scrollTo(0,0);
+window.addEventListener('pageshow',function(e){
+  /* pageshow com persisted=true = veio do cache de voltar/avancar */
+  if(e.persisted) window.scrollTo(0,0);
+});
+
 /* Cada init roda isolado: se um quebrar, os outros continuam. */
 function seguro(nome, fn){
   try{ fn(); }catch(e){ console.error('falhou em '+nome+':', e); }
 }
 
-/* ---------- pressel (tela de entrada) ---------- */
+/* ---------- pressel (tela de entrada) ----------
+   O onclick ja esta inline no botao, entao ela funciona mesmo se este
+   script quebrar. Isto aqui so garante que ela reapareca quando a aba
+   volta do cache do navegador (botao voltar do celular). */
 function initPressel(){
   var p=document.getElementById('pressel');
   if(!p) return;
-  /* forca visivel: cobre o caso da aba voltar do cache do navegador */
   p.style.display='flex';
   document.documentElement.classList.add('pressel-on');
   var b=document.getElementById('btnPressel');
@@ -594,6 +633,13 @@ function initCTA(){
       }catch(e){}
     });
   });
+}
+
+/* URL com #oferta (link compartilhado, historico) faz o navegador
+   pular direto pro bloco. Limpa o hash antes que isso aconteca. */
+if(location.hash){
+  try{ history.replaceState(null,'',location.pathname+location.search); }catch(e){}
+  window.scrollTo(0,0);
 }
 
 seguro('pressel', initPressel);
